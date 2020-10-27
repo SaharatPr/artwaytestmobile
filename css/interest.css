@@ -1,0 +1,62 @@
+
+.list-group-item{
+    font-size: 1.3em;
+}
+
+#iconadd{
+    /* align-self: center; */
+    /* background-color: brown !important; */
+    /* text-align: center;
+    justify-content: center;
+    margin-right: 0px;
+    vertical-align: middle; */
+}
+span{
+
+
+
+}
+
+i{
+
+}
+
+#item{
+
+    font-weight: 2px;
+}
+
+#Adventure{
+    background-color: #EAEAEA;
+    /* display:none !important;  */
+}
+#Shopping
+{
+    background-color: #EAEAEA;
+    display:none !important; 
+}
+#Party{
+
+    background-color: #EAEAEA;
+    display:none !important; 
+}
+#Foodle{
+    background-color: #EAEAEA;
+    display:none !important; 
+}
+#Art{
+    background-color: #EAEAEA;
+    display:none !important; 
+}
+#Festival{
+    background-color: #EAEAEA;
+    display:none !important; 
+}
+#Experience{
+    background-color: #EAEAEA;
+    display:none !important; 
+}
+#Nature{
+    background-color: #EAEAEA;
+    display:none !important; 
+}

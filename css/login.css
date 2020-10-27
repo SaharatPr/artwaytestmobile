@@ -1,0 +1,57 @@
+body{
+    background-image:url('../assets/SpashScreen.png');
+    background-color: #052238 !important; 
+     background-position: 45% 1%;
+    background-repeat:no-repeat; 
+    width: 100%;
+    height: 100%;
+
+}
+
+#iconapp{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+#logo{
+    padding-bottom: 5em;
+}
+
+#arywat{
+    padding-bottom: 1.5em;
+}
+
+#loginmember{
+    padding-bottom: 0.7em;
+}
+
+#registermember{
+    padding-bottom: 0.7em;
+}
+
+#orconnect{
+    padding-bottom: 1em;
+}
+
+#loginfacebook{
+    text-align: right;
+    justify-items: right;
+    justify-content: right;
+    padding-right: 2px;
+}
+
+#logingmail{
+    text-align: left;
+    justify-items: left;
+    justify-content: left;
+    padding-left: 2px;
+  
+}
+ 
