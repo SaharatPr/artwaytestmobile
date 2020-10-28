@@ -64,6 +64,8 @@ class ActionButton{
         
         
         };
+        this.displaytitle = false;
+        this.countselect = 0;
     }
 
     switchLoginPage()
@@ -76,13 +78,48 @@ class ActionButton{
         window.location.replace(this.ip+"page/interest.html");
     }
 
-    displaySubList(list){
-        var linkElementLnk = document.getElementById("item1");
 
-        linkElementLnk.style.display = 'none';
-        // document.getElementById("item1").style.background = "red" ;
-        document.getElementById("item1").style.visibility = "hidden";
+
+    displaySubList(list){
+        console.log(list)
+        
+        $.each(this.interest, function(index, value){ 
+            var title = list;
+            var checkcutspace = false;
+            var count = 0;
+            if(list == index){
+                
+          
+            $.each(value, function(index, value){ 
+                
+                if(checkcutspace == false){
+                    title = title.split(' ');
+                    checkcutspace = true;
+                    
+                }
+                count++;
+                var t = title[0]+count;
+                // for(let i=0; i<=1; i++) {
+                    console.log(document.getElementById(`${t}`).style.display);
+                    if(document.getElementById(`${t}`).style.display == "none"){
+                        document.getElementById(`${t}`).setAttribute('style', 'display:inherit !important');
+                        document.getElementById(`${list}icon`).innerHTML="close";
+                    }else{
+                        document.getElementById(`${list}icon`).innerHTML="add";
+                        document.getElementById(`${t}`).setAttribute('style', 'display:none !important');
+                    }
+                      
+                // }
+                
+            });
+        }
+        });
        
+    }
+
+    selectSubList(list){
+        this.countselect ++;
+        console.log(this.countselect);
     }
 }
 

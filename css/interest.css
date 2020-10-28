@@ -4,59 +4,80 @@
 }
 
 #iconadd{
-    /* align-self: center; */
-    /* background-color: brown !important; */
-    /* text-align: center;
+    align-self: center;
+     text-align: center;
     justify-content: center;
     margin-right: 0px;
-    vertical-align: middle; */
+    vertical-align: middle;
 }
 span{
 
 
-
 }
 
+#icon{
+    text-align: right;
+}
 i{
-
+    align-self: center;
+     text-align: right;
+    justify-content: right;
+    margin-right: 0px;
+    vertical-align: middle;
 }
 
 #item{
-
-    font-weight: 2px;
+    
+    font-weight: 2px !important;
 }
 
-#Adventure{
-    background-color: #EAEAEA;
-    /* display:none !important;  */
+#Adventure1, #Adventure2, #Adventure3, #Adventure4, #Adventure5{
+    background-color: hsl(0, 0%, 92%);
+    display:none  !important;   
+
+
 }
-#Shopping
+#Shopping1, #Shopping2, #Shopping3, #Shopping4, #Shopping5
 {
     background-color: #EAEAEA;
-    display:none !important; 
+     display:none !important;  
+     
 }
-#Party{
+#Party1, #Party2, #Party3, #Party4, #Party5 {
 
     background-color: #EAEAEA;
-    display:none !important; 
+     display:none !important;  
 }
-#Foodle{
+#Foodle1,#Foodle2,#Foodle3,#Foodle4,#Foodle5,#Foodle6{
     background-color: #EAEAEA;
-    display:none !important; 
+     display:none !important;  
 }
-#Art{
+#Art1, #Art2, #Art3, #Art4, #Art5{
     background-color: #EAEAEA;
-    display:none !important; 
+    display:none !important;  
 }
-#Festival{
+#Festival1, #Festival2, #Festival3, #Festival4{
     background-color: #EAEAEA;
-    display:none !important; 
+     display:none !important;  
 }
-#Experience{
+#Experience1, #Experience2, #Experience3, #Experience4, #Experience5, #Experience6{
     background-color: #EAEAEA;
-    display:none !important; 
+     display:none !important;  
 }
-#Nature{
+
+#Nature1,#Nature2,#Nature3,#Nature4,#Nature5,#Nature6{
     background-color: #EAEAEA;
-    display:none !important; 
+     display:none !important;  
+}
+
+ #next{
+
+}
+
+#back{
+    align-items: left;
+    justify-content: left;
+    align-self: left;
+    text-align: left;
+    vertical-align: left;
 }
