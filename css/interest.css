@@ -28,7 +28,7 @@ i{
 
 #item{
     
-    font-weight: 2px !important;
+    font-weight: bold;
 }
 
 #Adventure1, #Adventure2, #Adventure3, #Adventure4, #Adventure5{
@@ -80,4 +80,51 @@ i{
     align-self: left;
     text-align: left;
     vertical-align: left;
+}
+
+#nav{
+
+    align-items: left;
+    justify-content: left;
+    align-self: left;
+    text-align: left;
+    vertical-align: left;
+    font-weight: bold;
+}
+
+#next{
+    width: 85%;
+    align-items: right;
+    justify-content: right;
+    align-self: right;
+    text-align: right;
+    vertical-align: right;
+    font-size: 2em;
+    font-weight: bold;
+    color: black;
+}
+nav{
+    background-color: white !important;
+    height: 30px;
+    box-shadow: 0 4px 8px 0 rgba(168, 168, 168, 0.2), 0 6px 20px 0 rgba(168, 168, 168, 0.19);
+}
+
+.navbar-inner {
+    height: 7.5em;  
+}
+.label:empty{
+    display:none;
+  }
+
+a:link{
+    text-decoration: none;
+}
+a:visited{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+a:active{
+    text-decoration: none;
 }

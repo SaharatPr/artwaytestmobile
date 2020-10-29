@@ -1,0 +1,38 @@
+#artway{
+    color: white !important;
+    font-weight: bold;
+    font-size: 1.5em;
+
+
+}
+.container{
+    text-align: center !important;
+    justify-content: center !important;
+    justify-self: center !important;
+    justify-items: center !important;
+}
+.navbar-inner{
+    background-color: #052238;
+
+}
+
+footer{
+    background-color: #052238;
+    
+}
+
+#middlepicture{
+    width: 3em;
+    height: 3em;
+}
+
+#icon1{
+    padding-left: 1em;
+}
+footer{
+    color: white;
+}
+#iconmiddle{
+    height: 3.5em;
+    width: 3.5em;
+}

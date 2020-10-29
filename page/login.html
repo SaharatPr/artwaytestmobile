@@ -24,21 +24,21 @@
         </div>
             <div class="container">
                 <div id="loginmember">
-                    <img src="../assets/login/Group 209.png">
+                    <img src="../assets/login/Group 209.png" onclick="new ActionButton().switchMemberPage()">
                 </div>
                 <div id="registermember">
-                    <img src="../assets/login/Group 580.png">
+                    <img src="../assets/login/Group 580.png" onclick="new ActionButton().switchRegisterPage()">
                 </div>
                 <div id="orconnect"> 
                     <img src="../assets/login/Group 584.png">
                 </div>
                 <div id="loginsocial">
                     <div class="row">
-                        <div class="col" id="loginfacebook">
-                            <img src="../assets/login/Group 588.png" onclick="new Login().loginSocial()"/>
+                        <div class="col-6" id="loginfacebook">
+                            <img src="../assets/login/Group 588.png" onclick="new ActionButton().switchInterestPage()"/>
                         </div>
-                        <div class="col" id="logingmail">
-                            <img src="../assets/login/Group 589.png" />
+                        <div class="col-6" id="logingmail">
+                            <img src="../assets/login/Group 589.png"  onclick="new ActionButton().switchInterestPage()"/>
                         </div>
                     </div>
                 </div>
@@ -59,4 +59,4 @@
 </html>
 
 <script src="../js/login.js"></script>
-<script type="module" src="../js/actionbutton.js"></script>
+<script src="../js/actionbutton.js"></script>
