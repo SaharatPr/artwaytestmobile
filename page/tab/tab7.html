@@ -1,1 +1,130 @@
-Tab7
+<link rel="stylesheet" href="../css/tab7.css">
+<div id="headerprofile" class="container-fluid">
+
+    <div class="row icon-right">
+        <img src="../assets/profile/Icon ionic-ios-settings.png" onclick="openNav()">
+    </div>
+    <div class="row" id="profile">
+        <img src="../assets/profile/Component 31 – 1.png" id="pictureprofile">
+    </div>
+</div>
+<div id="body">
+
+    <div class="container">
+        <div class="row">
+            <div class="container" id="buttontitletab7">
+                <button type="button" class="btn" id="tab7trip">Trip</button>
+                <button type="button" class="btn" id="tab7article">Article</button>
+                <button type="button" class="btn" id="tab7article" onclick="route()">Route</button>
+                <button type="button" class="btn" id="tab7liked">Liked</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="tab5content">
+        <div class="row container">
+
+            <div class="col">
+                Tript(10)
+            </div>
+            <div class="col">
+                See all
+            </div>
+        </div>
+    </div>
+    <div class="container" id="tab7side">
+
+        <div class="swiper-container" id="slidethisweek">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="container" id="content">
+                        <img src="../assets/profile/Component 34 – 1.png" id="picturecontent1">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-slide">
+                        <div class="container" id="content">
+                            <img src="../assets/profile/Component 34 – 1.png" id="picturecontent1">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="swiper-slide">
+                        <div class="container" id="content">
+                            <img src="../assets/profile/Component 34 – 1.png" id="picturecontent1">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+        <br>
+        <img src="../assets/profile/Component 35 – 1.png" id="finalimages">
+    </div>
+</div>
+    <div id="mySidenav" class="sidenav">
+        <ul class="list-group list-group-flush">
+            <li class="navbar-title">Account Setting</li>
+            <li class="">Basic infomation</li>
+            <li class="">Change password</li>
+            <li class="">Customise your intersts</li>
+            <li class="list-group-item">Privacy Setting</li>
+          </ul>
+          <ul class="list-group list-group-flush">
+            <li class="navbar-title " id="navbar-title2"> Social Status</li>
+            <li class="">Following</li>
+          </ul>
+    </div>
+    <script>   
+    var valid = false;
+    var swiper = new Swiper('#slidethisweek', {
+            loop: true,
+            loopedSlides: 3,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            spaceBetween: 4,
+        });
+
+        function route() {
+            console.log("XXX");
+            $("#headerprofile").load("./profile/route.html");
+            $("#body").load("emty.html");
+        }
+        function openNav() {
+            console.log("XXXX");
+            if(!valid){
+                console.log("OPEN");
+                document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("headerprofile").style.marginLeft = "-250px";
+            document.getElementById("tab5content").style.marginLeft = "-250px";
+            document.getElementById("buttontitletab7").style.marginLeft = "-250px";
+            document.getElementById("tab7side").style.marginLeft = "-250px";
+            valid= true;
+            }else{
+                console.log("CLOSE");
+                document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("headerprofile").style.marginLeft = "0";
+            document.getElementById("buttontitletab7").style.marginLeft = "0";
+            document.getElementById("tab5content").style.marginLeft = "0";
+            document.getElementById("tab7side").style.marginLeft = "0";
+            valid= false;
+            }
+
+            // document.getElementById("content").style.marginLeft = "-250px";
+
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("headerprofile").style.marginLeft = "0";
+            document.getElementById("buttontitletab7").style.marginLeft = "0";
+            document.getElementById("tab5content").style.marginLeft = "0";
+            document.getElementById("tab7side").style.marginLeft = "0";
+            // document.getElementById("buttontitletab7").style.marginRight = "0";
+            // document.getElementById("tab7side").style.marginRight = "0";
+        }
+    </script>
