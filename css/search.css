@@ -1,0 +1,110 @@
+.navbar{
+    display: none;
+} 
+body{
+    /* background-color: #C1C1C1; */
+}
+
+#paneltitle{
+    -webkit-box-shadow: 0px 6px 5px -4px rgba(168,168,168,1);
+    -moz-box-shadow: 0px 6px 5px -4px rgba(168,168,168,1);
+    box-shadow: 0px 6px 5px -4px rgba(168,168,168,1);
+}
+
+/*Don't forget to add Font Awesome CSS : "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"*/
+input[type="text"] {
+    width: 100%;
+    border: 0px solid #aaa;
+    border-radius: 4px;
+    background-color: #EAEAEA;
+    outline: none;
+    font-size: 0.7em;
+    box-sizing: border-box;
+    transition: 0.3s;
+    height: 3em;
+  }
+  
+  input[type="text"]:focus {
+    border-color: dodgerBlue;
+    box-shadow: 0 0 8px 0 dodgerBlue;
+  }
+  
+  .inputWithIcon input[type="text"] {
+     padding-left: 40px; 
+
+  }
+  
+  .inputWithIcon {
+    position: relative;
+    padding-top: 0.7em;
+    justify-content: right;
+    padding-left: ;
+  }
+  
+  .inputWithIcon i {
+    position: absolute;
+    left: 0;
+    top: 45%;
+    /* padding: 9px 8px; */
+    color: #aaa;
+    transition: 0.3s;
+  }
+  
+  .inputWithIcon input[type="text"]:focus + i {
+    color: dodgerBlue;
+  }
+  
+  .inputWithIcon.inputIconBg i {
+    background-color: #aaa;
+    color: #fff;
+    padding-top: 1.7em;
+    border-radius: 4px 0 0 4px;
+  }
+  
+  .inputWithIcon.inputIconBg input[type="text"]:focus + i {
+    color: #fff;
+    background-color: dodgerBlue;
+  }
+  
+  #imgsetting{
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #headersearch{
+    -webkit-box-shadow: 0px 6px 5px -4px rgba(168,168,168,1);
+    -moz-box-shadow: 0px 6px 5px -4px rgba(168,168,168,1);
+    box-shadow: 0px 6px 5px -4px rgba(168,168,168,1);
+    padding-top: 1.5em;
+    background-color: #ffffff;
+    width: auto;
+    padding-bottom: 2em;
+  }
+
+  #seachtopic{
+    margin-top: 1em !important;
+  }
+  #x{
+      padding-top: 1em;
+      padding-bottom: 1em;
+  }
+  #iconpicture{
+    display: inline-block;
+    vertical-align:middle !important; 
+    text-align:center !important;
+}
+
+#iconpicture{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.material-icons{
+    margin-left: 0px;
+}

@@ -1,0 +1,22 @@
+#create1daytripconnent{
+    background-color: #EAEAEA;
+}
+.navbar{
+    display: none;
+}
+
+ div#myrount {
+    vertical-align: middle;
+    font-size: 1.3em;
+    text-align: center;
+    padding-top: 0.42em;
+
+}
+
+
+.mb-5, .my-5 {
+    margin-bottom: 0rem!important;
+} 
+body{
+    background-color: #EAEAEA;
+}

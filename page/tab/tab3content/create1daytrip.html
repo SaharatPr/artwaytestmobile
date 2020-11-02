@@ -1,0 +1,81 @@
+<link rel="stylesheet" href="../css/create1daytrip.css">
+<div  id="thisweekheader" >
+<!-- <div class="container-fluid shadow-sm p-3 mb-5 bg-white rounded">
+    <div class="row">
+        <div class="col-2" id="thisweekkeyboard_arrow_left" onclick="switchTab3Page()" >
+            <span class="material-icons text-center" style="font-size: 50px;">
+                keyboard_arrow_left
+                </span>
+               
+        </div>
+        <div class="col" id="myrount" >
+             <span class="text-center">My trip</span>  
+        </div>
+        <div class="col" id="create1daytripnext" >
+            <span class="text-center">Next</span>  
+       </div>
+    </div>
+</div>
+</div> -->
+<!-- 
+<div class="container-fluid" id="create1daytripconnent">
+    <div class="container-fluid shadow-sm p-3 mb-5 bg-white rounded">
+        <div class="row">
+            <div class="col-2" id="thisweekkeyboard_arrow_left" onclick="switchTab3Page()" >
+                <span class="material-icons text-center" style="font-size: 50px;">
+                    keyboard_arrow_left
+                    </span>
+                   
+            </div>
+            <div class="col" id="myrount" >
+                 <span class="text-center">My trip</span>  
+            </div>
+            <div class="col" id="create1daytripnext" >
+                <span class="text-center">Next</span>  
+           </div>
+        </div>
+    </div>
+    
+    <img src="../assets/create1day/this week.png " class="center" id="picyoucreate">
+    <input type="text" placeholder="Trip name">
+
+</div> -->
+<div class="container-fluid" id="create1daytripconnent">
+    <div>
+        <div class="row shadow-sm p-3 mb-5 bg-white rounded">
+            <div class="col-2" id="thisweekkeyboard_arrow_left" onclick="switchTab3Page()">
+                <span class="material-icons text-center" style="font-size: 50px;">
+                    keyboard_arrow_left
+                    </span>
+                   
+            </div>
+            <div class="col" id="myrount">
+                 <span class="text-center">My trip</span>  
+            </div>
+            <div class="col-2" id="create1daytripnext" onclick="nexttochooseday()">
+                <span class="text-center">Next</span>  
+           </div>
+        </div>
+    </div>
+    
+    <img src="../assets/create1day/this week.png " class="center" id="picyoucreate">
+    <input type="text" placeholder="Trip name">
+
+</div>
+<script>
+    function switchTab3Page(){
+        console.log("XXXXX");
+        document.body.style.backgroundImage = "url('../assets/tab3/Component 8 – 1.png') !important";
+        $('#contentstory').load("./tab/tab3.html");
+        $("#footer").load("./nav/footer.html");
+        $('#thisweekheader').load("emty.html");
+        $('#create1daytripconnent').load("emty.html");
+    }
+
+    function nexttochooseday(){
+        $('#contentapp').load("./tab/tab3content/choosedate.html");
+         $(".fixed-bottom").load('emty.html');
+         $(".navbar").load('emty.html');
+         $("#content").load('emty.html');
+    }
+</script>

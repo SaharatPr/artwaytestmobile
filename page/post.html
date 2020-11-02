@@ -1,0 +1,119 @@
+<link rel="stylesheet" href="../css/post.css">
+<div class="container-fluid shadow-sm p-3 mb-5 bg-white rounded" id="thisweekheader">
+    <div class="row">
+        <div class="col" id="thisweekkeyboard_arrow_left" >
+            <span class="material-icons text-center" style="font-size: 50px;" onclick="seeallThisWeek()">
+                keyboard_arrow_left
+                </span>
+        </div>
+    </div>
+</div>
+<ul class="list-group list-group-flush">
+    <li class="list-group-item" id="listmap">
+        <div class="row">
+            <div class="col-10" >
+                <img src="../assets/post/Component 7 – 1.png">
+            </div>
+            <div class="col-2 text-center" id="iconlike">
+                <div >
+                    <img src="../assets/post/Icon awesome-heart.png" id="posticon" class="likeicon" onclick="likepost()">
+                    13.4k
+                </div>
+                <div >
+                    <img src="../assets/post/Icon feather-bookmark.png" id="posticon">
+                    </div>
+             <div>
+                <img src="../assets/post/Icon ionic-ios-share-alt.png"  id="posticon">
+             </div>
+            
+            </div>
+        </div>
+    </li>
+                <img src="../assets/post/Repeat Grid 2.png" id="map">
+         
+
+    <li class="list-group-item">
+        <div class="row" >
+            <div class="col">
+                <img src="../assets/post/1.png">
+            </div>
+            <div class="col " style="text-align: right;;">
+                <img src="../assets/post/Icon feather-bookmark.png">
+            </div>
+        </div>
+        <div class="row " id="trip1" style="justify-content: center;">
+            <img src="../assets/post/2.png">
+        </div>
+        <!--=====================================================-->
+        <div class="row" >
+            <div class="col">
+                <img src="../assets/post/Component 11 – 1.png">
+            </div>
+            <div class="col"  style="text-align: right;">
+                <img src="../assets/post/Icon feather-bookmark.png">
+            </div>
+        </div>
+        <div class="row" style="justify-content: center;  padding-bottom: 1em;" id="trip1">
+            <img src="../assets/post/Component 12 – 1.png">
+        </div>
+         <!--=====================================================-->
+         <div class="row" >
+            <div class="col">
+                <img src="../assets/post/Component 13 – 1.png">
+            </div>
+            <div class="col"  style="text-align: right;">
+                <img src="../assets/post/Icon feather-bookmark.png">
+            </div>
+        </div>
+        <div class="row" style="justify-content: center;  padding-bottom: 1em;" id="trip1">
+            <img src="../assets/post/Component 6 – 1.png">
+        </div>
+         <!--=====================================================-->
+         <div class="row" id="trip1">
+            <div class="col">
+                <img src="../assets/post/Component 14 – 1.png">
+            </div>
+            <div class="col"  style="text-align: right;">
+                <img src="../assets/post/Icon feather-bookmark.png">
+            </div>
+        </div>
+        <div class="row" style="justify-content: center;  padding-bottom: 1em;" id="trip1">
+            <img src="../assets/post/Component 15 – 1.png">
+        </div>
+         <!--=====================================================-->
+         <div class="row" style="justify-content: center;  padding-bottom: 1em;" data-toggle="modal"
+         data-target=".bs-example-modal-lg" id="postinputcomment" onclick="comment()">
+            <img src="../assets/post/Component 16 – 1.png">
+        </div>
+         <div class="row" style="justify-content: center;  padding-bottom: 1em;" id="postcomment">
+            <img src="../assets/post/Component 9 – 1.png">
+        </div>
+    </li>
+    
+</ul>
+
+
+
+<!--======================================== Modal ============================-->
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog" >
+        <div class="modal-content" id="create-bord-defu">
+            <div class="modal-header" >
+                <h5 class="modal-title" id="myModalLabel">Comment</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+            </div>
+            <!-- <input type="text" placeholder="Comment" id="inputcomment"> -->
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+    </div>
+</div>
+<script>
+    function likepost(){
+        console.log("like");
+        document.getElementById("posticon").style.filter="red";    }
+</script>

@@ -1,0 +1,54 @@
+#create1daytripcontent{
+    background-color: #ffffff;
+
+}
+
+div#myrount {
+    vertical-align: middle;
+    font-size: 1.3em;
+    text-align: center;
+    padding-top: 0.42em;
+     /* position: fixed;  */
+}
+div#create1daytripnext {
+    vertical-align: right;
+    font-size:1em;
+    text-align: right;
+    padding-top: 1em;
+    /* position: fixed; */
+}
+
+#create1daytripconnent{
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    padding-top: 0em;
+    margin-top: 0em;
+    text-align: center;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+#create1daytripconnent{
+    width: 100%;
+}
+div#headertab5 {
+    width: 100%;
+}
+.notication {
+    width: 100%;
+    padding-top: 1em;
+}
+img#picnoti {
+    width: 100%;
+    padding-top: 1em;
+}
+img#follow {
+    width: 56%;
+}
+
+.notication.follow-picture {
+    text-align: left;
+    padding-top: 2em;
+}

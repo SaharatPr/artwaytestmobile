@@ -1,0 +1,48 @@
+<link rel="stylesheet" href="../css/myrount.css">
+<div  id="thisweekheader" >
+
+<div class="container-fluid" id="create1daytripconnent">
+    <div id="xxxx">
+        <div class="row shadow-sm p-3 mb-5 bg-white rounded">
+            <div class="col-2" id="thisweekkeyboard_arrow_left" onclick="switchTab3Page()">
+                <span class="material-icons text-center" style="font-size: 50px;">
+                    keyboard_arrow_left
+                    </span>
+                   
+            </div>
+            <div class="col" id="myrount">
+                 <span class="text-center">My Route collection</span>  
+            </div>
+            <div class="col-2" id="create1daytripnext" >
+                
+           </div>
+        </div>
+    </div>
+    </div>
+    
+   
+
+</div>
+<div class="text-center"  style="    background-color: #EAEAEA; height: 100%;
+" id="routway">
+    <img src="../assets/choosedate/Component 13 – 1.png " class="center" id="picmyrount">
+
+</div>
+<script>
+    function switchTab3Page(){
+        console.log("XXXXX");
+        document.body.style.backgroundImage = "url('../assets/tab3/Component 8 – 1.png') !important";
+        $('#contentstory').load("./tab/tab3.html");
+        $("#footer").load("./nav/footer.html");
+        $('#thisweekheader').load("emty.html");
+        $('#create1daytripconnent').load("emty.html");
+        $('#routway').load("emty.html");
+    }
+
+    function nexttochooseday(){
+        $('#contentapp').load("./tab/tab3content/choosedate.html");
+         $(".fixed-bottom").load('emty.html');
+         $(".navbar").load('emty.html');
+         $("#content").load('emty.html');
+    }
+</script>

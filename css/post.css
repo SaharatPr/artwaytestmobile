@@ -1,0 +1,85 @@
+#thisweekheader{
+    padding-top: 1.5em; 
+}
+#thisweekp{
+    font-size: 1.7em;
+    /* margin-top: 1em;  */
+}
+
+
+#thisweekheader{
+/* width: 100%; */
+border: 3px;
+font-weight: bold;
+    box-shadow: 0px 6px 5px -4px rgba(168,168,168,1);
+}
+
+
+
+/* .fixed-bottom {
+  display: none !important;
+
+} */
+.navbar{
+    display: none;
+} 
+
+#posticon{
+    margin: 0.5em
+}
+
+.mb-5, .my-5 {
+    margin-bottom: 1rem!important;
+}
+
+#listmap{
+    border-width: 0 0 0px;
+}
+
+.likeicon{
+    filter: red;
+}
+
+#trip1 {
+    padding-bottom: 1em;
+}
+#postinputcomment {
+    padding-bottom: 1em;
+}
+
+.modal-content {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    outline: 0;
+    border-top-left-radius: 20px !important;
+    border-top-right-radius: 20px !important;
+    /* border-radius: 20px,20px,0px,0px !important; */
+}
+
+#modal-create-bord{
+    height: 50%;
+    justify-content: center;
+}
+.modal-dialog {
+    position:fixed;
+    top:auto;
+    right:auto;
+    left:auto;
+    bottom:0;
+    width: 100%;
+    margin-left: 1px;
+
+  }
+  
+  #inputcomment{
+      width: 85%;
+  }

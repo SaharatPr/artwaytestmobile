@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="../css/search.css">
+<div class="container-fluid" id="headersearch">
+    <div class="row">
+        <div class="col-2">
+            <span class="material-icons" style="font-size: 50px;" onclick="switchTab1Page()">
+                keyboard_arrow_left
+                </span>
+        </div>
+        <div class="col">
+            <div class="inputWithIcon"  onclick="search()">
+                <input type="text" placeholder="Where do you want to go ?">
+                <i class="fa fa-search fa-lg fa-fw" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="inputWithIcon">
+                <img src="../assets/tab1/Group 787.png">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row" style="justify-content: center; padding-top: 1em;">
+    <img src="../assets/search/Component 8 – 1.png">
+</div>
+<div class="row" style="justify-content: center; padding-top: 1em;">
+    <img src="../assets/search/Component 6 – 1.png">
+</div>
+<div class="row" style="justify-content: center; padding-top: 2em; padding-bottom: 2em;">
+    <img src="../assets/search/Component 7 – 1.png">
+</div>
+</div>
+<script>
+          function switchTab1Page(){
+            $("#header").load("./nav/header.html");
+            $("#footer").load("./nav/footer.html");
+            $('#contentstory').load("./tab/tab1.html");
+            $('#contentapp').load('emty.html');
+      }
+</script>

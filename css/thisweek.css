@@ -1,0 +1,28 @@
+#thisweekheader{
+    padding-top: 1.5em; 
+}
+#thisweekp{
+    font-size: 1.7em;
+    /* margin-top: 1em;  */
+}
+
+#thisweekkeyboard_arrow_left{
+    /* margin-top: 1em;  */
+}
+
+#thisweekheader{
+/* width: 100%; */
+border: 3px;
+font-weight: bold;
+    box-shadow: 0px 6px 5px -4px rgba(168,168,168,1);
+}
+
+
+
+/* .fixed-bottom {
+  display: none !important;
+
+} */
+.navbar{
+    display: none;
+} 

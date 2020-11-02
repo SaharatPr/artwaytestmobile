@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="../css/tab3.css">
+
+<div class="container-fluid vertical-center" id="content">
+   <div class="row " >
+       <div class="container" id="indextab3">
+        <img src="../assets/tab3/this week.png" id="tab3pictureindex" >
+        <img src="../assets/tab3/Component 9 – 1.png" id="tab3pictureindex" onclick="create_1_day_trip()">
+        <img src="../assets/tab3/Component 10 – 1.png" id="tab3pictureindex" onclick="create_multiple_day_trip()">
+        <img src="../assets/tab3/Component 11 – 1.png" id="tab3pictureindex" onclick="create_from_my_rote()">
+       </div>
+    
+   </div>
+</div>
+<div id="contentapp">
+
+</div>
+<script>
+    function create_1_day_trip(){
+         $('#contentapp').load("./tab/tab3content/create1daytrip.html");
+         $(".fixed-bottom").load('emty.html');
+        $(".navbar").load('emty.html');
+         $("#content").load('emty.html');
+         $("#header").load('emty.html');
+    }
+
+    function create_multiple_day_trip(){
+        $('#contentapp').load("./tab/tab3content/createmultiday.html");
+         $(".fixed-bottom").load('emty.html');
+         $(".navbar").load('emty.html');
+         $("#content").load('emty.html');
+    }
+
+    function create_from_my_rote(){
+        $('#contentapp').load("./tab/tab3content/createmyrout.html");
+         $(".fixed-bottom").load('emty.html');
+         $(".navbar").load('emty.html');
+         $("#content").load('emty.html');
+    }
+</script>

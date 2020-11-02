@@ -1,0 +1,363 @@
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<link rel="stylesheet" href="../css/tab1.css">
+
+<div class="container" id="headersearch">
+    <div class="row">
+        <div class="col">
+            <div class="inputWithIcon" onclick="search()">
+                <input type="text" placeholder="Where do you want to go ?">
+                <i class="fa fa-search fa-lg fa-fw" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="inputWithIcon">
+                <img src="../assets/tab1/Group 787.png">
+                </dib>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-container" id="slidetitlesearch">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide"> <p class="slide-image1">Exhition</p></div>
+            <div class="swiper-slide"> <p class="slide-image1">Music</p></div>
+            <div class="swiper-slide"> <p class="slide-image1">Museum</p></div>
+            <div class="swiper-slide"> <p class="slide-image1">Market</p></div>
+            <div class="swiper-slide"> <p class="slide-image1">Slide ???</p></div>
+            <div class="swiper-slide"> <p class="slide-image1">Slide ???</p></div>
+		</div>
+    </div>
+</div>
+
+<div id="suggested">
+    <div class="container" id="contentsuggested">
+        <div class="row" id="titlesugess">
+            <p>SUGGESTED</p>
+        </div>
+        <div class="swiper-container" id="slidesugess">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="../assets/tab1/Repeat Grid 1.png" data-toggle="modal"
+                    data-target=".bs-example-modal-lg" onclick="loadmodaldefu()">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/tab1/Component 17 – 1.png">
+                </div>
+                <div class="swiper-slide">
+                     <img src="../assets/tab1/Component 17 – 1.png">
+                </div>
+               
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+        <!-- <div class="container" id="sugess-card">
+            <div id="contenbackgroud">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="../assets/tab2/Ellipse 1.png" id="profilesugess">
+                    </div>
+                    <div class="col-1" id="profilesugess">
+                        <p>ADddddy</p>
+                    </div>
+                    <div class="col" id="pin">
+                        <p> <img src="../assets/tab2/Group 1203.png" data-toggle="modal"
+                                data-target=".bs-example-modal-lg" onclick="loadmodaldefu()"></p>
+                    </div>
+                </div>
+                <div id="storesugess">
+                    <div class="container">
+                        <a>เปลี่ยนพระนะครให้เป้นรันเวย์ปังๆ</a>
+                        <a>4 จุดห้ามพลาดย่านสะพานพุทธ</a>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div class="container">
+            <div id="seeall" onclick="foryou()">
+                See all
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--======================================== Modal ============================-->
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog">
+        <div class="modal-content" id="create-bord-defu">
+            <div class="modal-header">
+                <h5 class="modal-title" id="myModalLabel">Select Board</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+            </div>
+            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ex ligulao.</p> -->
+            <div class="row" style="width: 100%;">
+                <div class="col-3">
+                    <div>
+                        <img src="../assets/tab1/7b26ff73-a729-4b8d-accc-d0a0832b48da.png" id="selectpicture">
+                    </div>
+                </div>
+                <div class="col justify-content-center align-self-center" id="textselectbord">
+                    <p>ภูเขาธรรมชาติ</p>
+                </div>
+            </div>
+            <div class="row" style="width: 100%;">
+                <div class="col-3 ">
+                    <div>
+                        <img src="../assets/tab1/odrbk3p2h1TaDLVcIcf-o.png" id="selectpicture">
+                    </div>
+                </div>
+                <div class="col justify-content-center align-self-center">
+                    <p>Bangkok Trip</p>
+                </div>
+            </div>
+            <div class="row" style="width: 100%;">
+                <div class="col-3">
+                    <div>
+                        <img src="../assets/tab1/po36dh3acd0K29bdbH3q-o.png" id="selectpicture">
+                    </div>
+                </div>
+                <div class="col justify-content-center align-self-center">
+                    <p>ทะเล</p>
+                </div>
+            </div>
+            <div class="row" style="width: 100%;">
+                <div class="col-3">
+                    <div>
+                        <img src="../assets/tab1/asset-1.png" id="selectpicture">
+                    </div>
+                </div>
+                <div class="col justify-content-center align-self-center">
+                    <p>เดินเขา</p>
+                </div>
+            </div>
+            <div class="row" style="width: 100%;" onclick="createBord()">
+                <div class="col-3">
+                    <div>
+                        <img src="../assets/tab1/Component 3 – 1.png" id="selectpicture">
+                    </div>
+                </div>
+                <div class="col justify-content-center align-self-center">
+                    <p>Create Board</p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<!-- ================================== This Week ========================-->
+
+<div class="container" id="this">
+
+    <div class="row">
+        <div class="col text-left">
+            <p id="thisweek">THIS WEEK</p>
+        </div>
+
+        <div class="col text-right">
+            <p id="see" onclick="seeallThisWeek()"> See all</p>
+        </div>
+    </div>
+    <div class="swiper-container" id="slidethisweek">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"  > <img src="../assets/tab1/1.png"  class="slide-image"></div>
+            <div class="swiper-slide" > <img src="../assets/tab1/2.png" class="slide-image"></div>
+            <div class="swiper-slide"  > <img src="../assets/tab1/3.png" class="slide-image"></div>
+            <div class="swiper-slide"  > <img src="../assets/tab1/1.png" class="slide-image"></div>
+            <div class="swiper-slide" > <img src="../assets/tab1/2.png" class="slide-image"></div>
+            <div class="swiper-slide"  > <img src="../assets/tab1/3.png" class="slide-image"></div>
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ================================== Staff pick ========================-->
+<div class="container" id="staffpick">
+    <div class="row">
+        <div class="col text-left">
+            <p id="staff">STAFF PICK</p>
+        </div>
+
+        <div class="col text-right">
+            <p id=""> See all</p>
+        </div>
+    </div>
+    <div class="swiper-container" id="sildestaff">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+
+                <img src="../assets/tab1/4.png" class="slide-image">
+
+            </div>
+            <div class="swiper-slide">
+                <img src="../assets/tab1/5.png" class="slide-image">
+            </div>
+            <div class="swiper-slide">
+
+                <img src="../assets/tab1/4.png" class="slide-image">
+
+            </div>
+            <div class="swiper-slide">
+                <img src="../assets/tab1/5.png" class="slide-image">
+            </div>
+        </div>
+    </div>
+    <br>
+</div>
+
+<!-- ================================== Top trip ========================-->
+<div class="container" id="toptrip">
+    <div class="row">
+        <div class="col text-left">
+            <p id="top">TOP TRIP</p>
+        </div>
+
+        <div class="col text-right">
+            <p id="seealltrip"> See all</p>
+        </div>
+    </div>
+
+    <div class="swiper-container" id="slidetoptrip">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="../assets/tab1/6.png" class="slide-image"></div>
+            <div class="swiper-slide"><img src="../assets/tab1/7.png" class="slide-image"></div>
+            <div class="swiper-slide"><img src="../assets/tab1/8.png" class="slide-image"></div>
+            <div class="swiper-slide"><img src="../assets/tab1/6.png" class="slide-image"></div>
+            <div class="swiper-slide"><img src="../assets/tab1/7.png" class="slide-image"></div>
+            <div class="swiper-slide"><img src="../assets/tab1/8.png" class="slide-image"></div>
+        </div>
+    </div>
+    <br>
+</div>
+
+<!-- ===================================== recent view =====================-->
+
+<div class="container" id="recentview">
+    <div class="row">
+        <div class="col text-left">
+            <p id="recent">RECENT VIEW</p>
+        </div>
+
+        <div class="col text-right">
+            <p id="seeallrecent"> See all</p>
+        </div>
+    </div>
+    <div class="swiper-container" id="sliderecent">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="../assets/tab1/6.png" class="slide-image"></div>
+            <div class="swiper-slide"><img src="../assets/tab1/7.png" class="slide-image"></div>
+            <div class="swiper-slide"><img src="../assets/tab1/8.png" class="slide-image"></div>
+            <div class="swiper-slide"><img src="../assets/tab1/6.png" class="slide-image"></div>
+            <div class="swiper-slide"><img src="../assets/tab1/7.png" class="slide-image"></div>
+            <div class="swiper-slide"><img src="../assets/tab1/8.png" class="slide-image"></div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</div>
+
+
+<!-- <div class="modal-header " id="modal-create-bord" style="display: none;" >
+    <input type="text" placeholder="Board Name" id="inputbordname">
+</div> -->
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="../js/dragscroll-master/dragscroll.js"></script>
+<script>
+    var swiper = new Swiper('#slidethisweek', {
+        loop: true,
+      loopedSlides:3,
+      centeredSlides: true,
+			slidesPerView: 'auto',
+      spaceBetween: 4,
+    });
+
+    var swiper2 = new Swiper('#sildestaff', {
+        loop: true,
+      loopedSlides:2,
+      centeredSlides: true,
+			slidesPerView: 'auto',
+      spaceBetween: 4,
+    });
+
+    var swiper3 = new Swiper('#slidetoptrip', {
+        loop: true,
+      loopedSlides:3,
+      centeredSlides: true,
+			slidesPerView: 'auto',
+      spaceBetween: 4,
+    });
+    var swiper4 = new Swiper('#sliderecent', {
+        loop: true,
+      loopedSlides:3,
+      centeredSlides: true,
+			slidesPerView: 'auto',
+      spaceBetween: 4,
+    });
+   
+    var swiper5 = new Swiper('#slidetitlesearch', {
+     loop: true,
+      loopedSlides:4,
+      centeredSlides: true,
+			slidesPerView: 4,
+      spaceBetween: 10,
+
+    });
+
+
+		var swiper6 = new Swiper('#slidesugess', {
+      slidesPerView: 'auto',
+      centeredSlides: true,
+      spaceBetween: 30,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+
+</script>
+<script>
+
+
+
+    function createBord() {
+        $(".modal-content").load("./tab/modalbordname.html");
+        // $(".modal-content").load("./tab/tab1.html #modal-create-bord");
+    }
+
+    function loadmodaldefu() {
+        $(".modal-content").load("./tab/tab1.html #create-bord-defu");
+
+    }
+    function search() {
+        console.log("XXXXX");
+        $("#contentapp").load("search.html");
+        $(".fixed-bottom").load('emty.html');
+        $("#contentstory").load('emty.html');
+        $(".navbar").load('emty.html')
+    }
+    function seeallThisWeek() {
+        // document.getElementsByClassName("fixed-bottom").style.display = "none  !important";   
+        $("#contentapp").load("thisweek.html");
+        $(".fixed-bottom").load('emty.html');
+        $("#contentstory").load('emty.html');
+        $(".navbar").load('emty.html')
+        //  document.getElementById("footerfixed").style.display = "none  !important";
+        //     document.getElementById("contentstory").style.display = "none  !important";
+        //    document.getElementById("footer").style.display = "none  !important";   
+    }
+
+    function foryou(){
+        $("#contentapp").load("foryou.html");
+        $(".fixed-bottom").load('emty.html');
+        $("#contentstory").load('emty.html');
+        $(".navbar").load('emty.html')
+    }
+</script>

@@ -1,0 +1,151 @@
+#create1daytripcontent{
+    background-color: #ffffff;
+
+}
+
+div#myrount {
+    vertical-align: middle;
+    font-size: 1.3em;
+    text-align: center;
+    padding-top: 0.42em;
+     /* position: fixed;  */
+}
+div#create1daytripnext {
+    vertical-align: right;
+    font-size:1em;
+    text-align: right;
+    padding-top: 1em;
+    /* position: fixed; */
+}
+
+#create1daytripconnent{
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    padding-top: 0em;
+    margin-top: 0em;
+    text-align: center;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+.mb-5, .my-5 {
+    margin-bottom: 0rem!important;
+}
+
+#tap5subtitle{
+    margin-top: 1em;
+}
+
+div#tab5trip {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+
+}
+div#tab5localgion {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+#create1daytripconnent{
+    width: 100%;
+}
+#tab5trip1{
+    padding-top: 1em;
+}
+div#tab5card1 {
+
+    box-shadow: -2px 5px 10px 0px rgba(168,168,168,1);
+    border-radius: 10px;
+    padding: 1em;
+    margin-top: 1em;
+}
+
+div#tab5contentcard1 {
+    padding-top: 1em;
+    text-align: initial;
+}
+div#tab5settingcard {
+    text-align: right;
+}
+
+.modal-dialog {
+    position:fixed;
+    top:auto;
+    right:auto;
+    left:auto;
+    bottom:0;
+    width: 100%;
+    margin-left: 1px;
+
+  }
+  #selectpicture{
+    margin-left: 1em;
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+
+  #textselectbord{
+
+  }
+  .modal-content {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    outline: 0;
+    border-top-left-radius: 5px !important;
+    border-top-right-radius: 5px !important;
+    /* border-radius: 20px,20px,0px,0px !important; */
+}
+
+#modal-create-bord{
+    height: 50%;
+    justify-content: center;
+}
+div#headertab5 {
+    width: 100%;
+}
+div.firsttab5{
+    margin-top: 40%;
+}
+div.lastab5{
+    margin-bottom: 10em;
+}
+
+button.close {
+    text-align: right;
+    margin-bottom: 0.5em;
+    margin-right: 0.5em;
+}
+input[type="text"] {
+    width: 100%;
+    border: 0px solid #aaa;
+    border-radius: 4px;
+    background-color: #EAEAEA;
+    outline: none;
+    font-size: 0.7em;
+    box-sizing: border-box;
+    transition: 0.3s;
+    height: 3em;
+    text-align: center;
+    border-radius: 10px;
+        margin-bottom: 10em;
+    margin-top: 2em;
+
+  }
+
+#xxx{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }

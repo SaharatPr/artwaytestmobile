@@ -1,0 +1,16 @@
+#lable_password{
+    color: white !important;
+}
+
+#forget{
+    color: white;
+    text-align: right;
+}
+#buttonsubmit{
+    /* align-items: center; */
+
+    /* background-color: red; */
+}
+#buttonpicture{
+    padding-left: 0px;
+}

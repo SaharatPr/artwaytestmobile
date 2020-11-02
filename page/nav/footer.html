@@ -1,0 +1,72 @@
+<footer class="fixed-bottom" id="footerfixed">
+    <div class="container-fluid" id="footernav" >
+        <div class="row" >
+
+          <div class="col" style=" width: 13%;" id="iconfooter">
+            <img src="../assets/feed/1.png" id="iconpicture" onclick="switchTab1()">
+          </div>
+          <div class="col" style=" width: 13%;" id="iconfooter">
+            <img src="../assets/feed/2.png" id="iconpicture" onclick="switchTab2()">
+          </div>
+          <div class="col" style="width: 13%;" id="iconfooter">
+           <img src="../assets/feed/3.png" id="iconpicture" onclick="switchTab3()">
+          </div>
+          <div class="col" style="width: 22%;" id="iconfootermiddle">
+                <div id="xxx">
+                    <img src="../assets/feed/4.png" id="iconmiddle" onclick="switchTab4()">
+                </div>
+               
+            
+          </div>
+          <div class="col" style="width: 13%;" id="iconfooter">
+            <img src="../assets/feed/5.png" id="iconpicture" onclick="switchTab5()">
+          </div>
+          <div class="col" style=" width: 13%;" id="iconfooter">
+            <img src="../assets/feed/6.png" id="iconpicture" onclick="switchTab6()">
+          </div>
+          <div class="col" style=" width: 13%;" id="iconfooter">
+           <img src="../assets/feed/7.png" id="iconpicture" onclick="switchTab7()">
+          </div>
+
+        </div>
+      </div>
+</footer>
+
+<script>
+  function  switchTab1(){
+    console.log("tab 1");
+        // $('#contentstory').load("./tab/tab1.html");
+        // // $("#header").load("./nav/header.html");
+        // $("#footer").load("./nav/footer.html");
+        // $('#contentstory').load("./tab/tab1.html");
+        // $("#appcontent").load("emty.html");
+
+            $("#contentapp").load("emty.html");
+        //     $("#header").load("./nav/header.html");
+            $("#header").load("./nav/header.html");
+        //     $("#footer").load("./nav/footer.html");
+             $('#contentstory').load("./tab/tab1.html");
+
+    }
+    function switchTab2(){
+      console.log("tab2");
+        $('#contentstory').load("./tab/tab2.html");
+    }
+    function switchTab3(){
+      console.log("tab3");
+        $('#contentstory').load("./tab/tab3.html");
+        $("#header").load("emty.html");
+    }
+    function  switchTab4(){
+        $('#contentstory').load("./tab/tab4.html");
+    }
+    function switchTab5(){
+        $('#contentstory').load("./tab/tab5.html");
+    }
+    function switchTab6(){
+        $('#contentstory').load("./tab/tab6.html");
+    }
+    function switchTab7(){
+        $('#contentstory').load("./tab/tab7.html");
+    }
+</script>

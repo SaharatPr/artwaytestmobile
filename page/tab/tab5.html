@@ -1,0 +1,143 @@
+<link rel="stylesheet" href="../css/pin.css">
+<div id="thisweekheader">
+    <div class="container" id="create1daytripconnent">
+        <div>
+            <div class="row" id="headertab5">
+                <div class="col-2" id="thisweekkeyboard_arrow_left" onclick="create_1_day_trip()">
+                    <span class="material-icons text-center" style="font-size: 50px;">
+                        keyboard_arrow_left
+                    </span>
+
+                </div>
+                <div class="col" id="myrount">
+                    <span class="text-center"></span>
+                </div>
+                <div class="col-2" id="create1daytripnext" onclick="savepin()">
+                    <span class="text-center">Saved</span>
+                </div>
+            </div>
+            <div class="shadow-sm  row" id="tap5subtitle">
+                <div class="col text-center" style="background-color: #EAEAEA;" id="tab5trip">
+                    Trip
+                </div>
+                <div class="col text-center" id="tab5localgion">
+                    Location
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid firsttab5" id="tab5trip1">
+
+    <div class="col" id="tab5card1">
+        <img src="../assets/save/Component 6 – 1.png" style="width: 100%;">
+        <div class="row" id="tab5contentcard1">
+            <div class="col">
+                ทะเล
+            </div>
+            <div class="col" id="tab5settingcard">
+                <img src="../assets/save/Icon ionic-ios-more.png" data-toggle="modal"
+                    data-target=".bs-example-modal-lg" onclick="openmodaldefu()">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid" id="tab5trip1">
+
+    <div class="col" id="tab5card1">
+        <img src="../assets/save/Component 7 – 1.png" style="width: 100%;">
+        <div class="row" id="tab5contentcard1">
+            <div class="col">
+                ทะเล
+            </div>
+            <div class="col" id="tab5settingcard">
+                <img src="../assets/save/Icon ionic-ios-more.png" data-toggle="modal"
+                data-target=".bs-example-modal-lg" onclick="openmodaldefu()">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid lastab5" id="tab5trip1">
+
+    <div class="col bottom" id="tab5card1">
+        <img src="../assets/save/Component 13 – 1.png" style="width: 100%;">
+        <div class="row" id="tab5contentcard1">
+            <div class="col">
+                ทะเล
+            </div>
+            <div class="col" id="tab5settingcard">
+                <img src="../assets/save/Icon ionic-ios-more.png" data-toggle="modal"
+                data-target=".bs-example-modal-lg" onclick="openmodaldefu()">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- <div class="row"></div>
+    <div class="container" style="background-color: red;">
+        <div class="row">
+            <div class="col">
+                <img src="../assets/save/Component 6 – 1.png">
+            </div>
+    
+        </div>
+    
+    </div>
+</div> -->
+
+
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog">
+        <div class="modal-content" id="create-bord-defu">
+  
+                <!-- <h5 class="modal-title" id="myModalLabel">Select Board</h5> -->
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true" id="closemodaltab5">&times;</span></button>
+  
+            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ex ligulao.</p> -->
+            <div class="row" style="width: 100%;">
+  
+                    <div class="container">
+                        <img src="../assets/save/Component 9 – 1.png" id="selectpicture" onclick="openbordname()">
+                    </div>
+         
+                
+            </div>
+            <div class="row" style="width: 100%;">
+     
+                    <div class="container"> 
+                        <img src="../assets/save/Component 10 – 1.png" id="selectpicture">
+                    </div>
+     
+               
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    function savepin() {
+
+    }
+
+
+    function nexttochooseday() {
+
+    }
+
+    function openbordname(){
+        $(".modal-content").load("./tab/modalbordnametab5.html");
+    }
+
+    function openmodaldefu(){
+        $(".modal-content").load("./tab/tab5.html #create-bord-defu");
+    }
+</script>

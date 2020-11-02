@@ -1,0 +1,59 @@
+<link rel="stylesheet" href="../css/thisweek.css">
+<div class="container-fluid shadow-sm p-3 mb-5 bg-white rounded" id="thisweekheader">
+    <div class="row">
+        <div class="col" id="thisweekkeyboard_arrow_left" >
+            <span class="material-icons text-center" style="font-size: 50px;" onclick="switchTab1Page()">
+                keyboard_arrow_left
+                </span>
+        </div>
+        <div class="col" id="thisweekp" >
+          <p class=" text-center text-right">THIS WEEK</p>  
+        </div>
+    </div>
+</div>
+
+<ul class="list-group list-group-flush">
+    <li class="list-group-item">
+       <img src="../assets/thisweek/1.png" onclick="contentPost()">
+    </li>
+    <li class="list-group-item">
+        <img src="../assets/thisweek/2.png">
+    </li>
+    <li class="list-group-item">
+        <img src="../assets/thisweek/3.png">
+    </li>
+    <li class="list-group-item">
+        <img src="../assets/thisweek/4.png">
+    </li>
+    <li class="list-group-item">
+        <img src="../assets/thisweek/5.png">
+    </li>
+    <li class="list-group-item">
+        <img src="../assets/thisweek/6.png">
+    </li>
+    <li class="list-group-item">
+        <img src="../assets/thisweek/7.png">
+    </li>
+    <li class="list-group-item">
+        <img src="../assets/thisweek/8.png">
+    </li>
+    <li class="list-group-item">
+        <img src="../assets/thisweek/9.png">
+    </li>
+    <li class="list-group-item">
+        <img src="../assets/thisweek/10.png">
+    </li>
+  </ul>
+
+  <script>
+      function contentPost(){
+         $("#contentapp").load('post.html');
+      }
+
+      function switchTab1Page(){
+        $("#header").load("./nav/header.html");
+            $("#footer").load("./nav/footer.html");
+            $('#contentstory').load("./tab/tab1.html");
+            $('#contentapp').load('emty.html');
+      }
+  </script>

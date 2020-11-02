@@ -1,0 +1,71 @@
+#artway{
+    color: white !important;
+    font-weight: bold;
+    font-size: 1.5em;
+
+
+}
+.container{
+    text-align: center !important;
+    justify-content: center !important;
+    justify-self: center !important;
+    justify-items: center !important;
+}
+.navbar-inner{
+    background-color: #052238;
+
+}
+
+footer{
+    background-color: #052238;
+
+}
+
+
+#icon1{
+    padding-left: 1em;
+}
+
+footer{
+    color: white;
+}
+
+#iconmiddle{
+    width: 4em;
+    height: 4em;
+}
+#xxx{
+    position: relative;
+    bottom: 1.5em;
+}
+
+#iconpicture{
+    display: inline-block;
+    vertical-align:middle !important; 
+    text-align:center !important;
+}
+
+#iconpicture{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.input-icons i { 
+    position: absolute; 
+} 
+  
+.input-icons { 
+    width: 100%; 
+    margin-bottom: 10px; 
+} 
+  
+.icon { 
+    padding: 10px; 
+    color: green; 
+    min-width: 50px; 
+    text-align: center; 
+} 
