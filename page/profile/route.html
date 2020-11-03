@@ -1,79 +1,69 @@
 <link rel="stylesheet" href="../css/rout.css">
-<div id="routeprofile">
+<div id="headerprofile">
     <div class="row icon-right">
-        <img src="../assets/profile/Icon ionic-ios-settings.png">
+        <img src="../assets/profile/Icon ionic-ios-settings2.png" onclick="openNavRout()">
     </div>
     <div class="row" id="profile">
         <img src="../assets/profile/Component 36 – 1.png" id="pictureprofile">
     </div>
-
 </div>
 
 <div id="body">
 
 
     <div class="container">
+        <div class="row" id="countfollow">
+            <div class="col">
+                <img src="../assets/profile/Component 40 – 1.png" id="profilefollower" onclick="follower()">
+            </div>
+            <div class="col">
+                <img src="../assets/profile/Component 42 – 1.png" id="profilefollowing"  onclick="following()">
+            </div>
+        </div>
         <div class="row">
             <div class="container" id="buttontitletab7">
-                <button type="button" class="btn" id="tab7triprout">Trip</button>
+                <button type="button" class="btn" id="tab7triprout" onclick="trip()">Trip</button>
                 <button type="button" class="btn" id="tab7articlerout">Article</button>
-                <button type="button" class="btn" id="tab7draf" style="background-color:#052238 ;">Draft</button>
-                <button type="button" class="btn" id="tab7likedrout">Liked</button>
+                <button type="button" class="btn" id="tab7draf" onclick="route()">Draft</button>
+                <button type="button" class="btn" id="tab7likedrout" onclick="likerout()">Liked</button>
             </div>
+        </div>
+    <div class="subcontentrout">
+        <div class="row">
+            <img src="../assets/profile/Component 38 – 1.png" alt="" id="draftprofile">
+        </div>
+
+        <div class="row">
+            <img src="../assets/profile/Component 41 – 1.png" alt="" id="draftprofile" class="draftprofile">
         </div>
     </div>
 </div>
-<!-- <div class="container" id="tab5content">
-    <div class="row container">
-
-        <div class="col">
-            Tript(10)
-        </div>
-        <div class="col">
-            See all
-        </div>
-    </div>
-</div>
-<div class="container">
-
-    <div class="swiper-container" id="slidethisweek">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <div class="container" id="content">
-                    <img src="../assets/profile/Component 34 – 1.png" id="picturecontent1">
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="swiper-slide">
-                    <div class="container" id="content">
-                        <img src="../assets/profile/Component 34 – 1.png" id="picturecontent1">
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="swiper-slide">
-                <div class="swiper-slide">
-                    <div class="container" id="content">
-                        <img src="../assets/profile/Component 34 – 1.png" id="picturecontent1">
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
 
     </div>
-    <br>
-    <img src="../assets/profile/Component 35 – 1.png" id="finalimages">
-</div>
 </div>
 
+<div id="mySidenav" class="sidenav">
+    <ul class="list-group list-group-flush">
+        <li class="navbar-title">Account Setting</li>
+        <li class="">Basic infomation</li>
+        <li class="">Change password</li>
+        <li class="">Customise your intersts</li>
+        <li class="">Privacy Setting</li>
+    </ul>
+    <ul class="list-group list-group-flush">
+        <li class="navbar-title " id="navbar-title2"> Social Status</li>
+        <li class="">Following</li>
+    </ul>
 </div>
+<script>
+    var validrount = false;
+    // console.log($('#headerprofile').html(GetURLParameter('id')));
 
-</div> -->
 
-<script>   var swiper = new Swiper('#slidethisweek', {
+  
+   
+    
+    var swiper = new Swiper('#slidethisweek', {
         loop: true,
         loopedSlides: 3,
         centeredSlides: true,
@@ -81,5 +71,60 @@
         spaceBetween: 4,
     });
 
-    document.getElementById("#profile").style.backgroundColor = "#052238 !important";
+    // document.getElementById("#profile").style.backgroundColor = "#052238 !important";
+
+    function openNavRout() {
+
+        if (!validrount) {
+            console.log("OPEN");
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("headerprofile").style.marginLeft = "-250px";
+            // document.getElementById("routecontentdraf").style.marginLeft = "-250px";
+
+            // document.getElementById("buttontitletab7").style.marginLeft = "-250px";
+            // document.getElementById("body").style.marginLeft = "-250px";
+            validrount = true;
+        } else {
+            console.log("CLOSE");
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("headerprofile").style.marginLeft = "0";
+            // document.getElementById("buttontitletab7").style.marginLeft = "0";
+            // document.getElementById("tab5content").style.marginLeft = "0";
+            // document.getElementById("tab7side").style.marginLeft = "0";
+            validrount = false;
+        }
+
+       
+    }
+    function likerout(){
+        console.log("DDWD");
+
+            $("#headerprofile").load("./profile/likes.html");
+            // $("#body").load("emty.html");
+            // $("#headerprofile").load("emty.html");
+        }
+        function route() {
+            console.log("XXX");
+            $("#headerprofile").load("./profile/route.html");
+            $("#body").load("emty.html");
+        }
+
+        function trip(){
+            console.log("Wellcome to trip");
+            $('#contentstory').load("./tab/tab7.html");
+        }
+        function follower(){
+            $("#body").load("emty.html");
+            $("#headerprofile").load("emty.html");
+            $("#headerprofile").load("./profile/follower.html");
+            $("#footer").load("emty.html");
+        }
+
+        function following(){
+            $("#body").load("emty.html");
+            $("#headerprofile").load("emty.html");
+            $("#footer").load("emty.html");
+            
+            $("#headerprofile").load("./profile/following.html");
+        }
 </script>

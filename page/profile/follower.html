@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="../css/follower.css">
+<div class="container-fluid shadow-sm p-3 mb-5 bg-white rounded" id="thisweekheader">
+    <div class="row">
+        <div class="col" id="thisweekkeyboard_arrow_left" >
+            <span class="material-icons text-center" style="font-size: 50px;" onclick="route()">
+                keyboard_arrow_left
+                </span>
+        </div>
+        <div class="col" id="thisweekp" >
+          <p class=" text-center text-right">Nattkwnan</p>  
+          <p class=" text-center text-right">14.k Follower</p> 
+        </div>
+    </div>
+</div>
+<div class="container">
+<img src="../assets/profile/Component 9 – 1.png">   
+</div>
+<script>
+            function route() {
+            console.log("XXX");
+            $("#headerprofile").load("./profile/route.html");
+            $("#body").load("emty.html");
+            $("#footer").load("./nav/footer.html");
+        }
+</script>

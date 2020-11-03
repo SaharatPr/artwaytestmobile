@@ -1,0 +1,65 @@
+<link rel="stylesheet" href="../css/like.css">
+<div id="headerprofile">
+    <div class="row icon-right">
+        <img src="../assets/profile/Icon ionic-ios-settings2.png" onclick="openNavRout()">
+    </div>
+    <div class="row" id="profile">
+        <img src="../assets/profile/Component 36 – 1.png" id="pictureprofile">
+    </div>
+</div>
+
+<div id="body">
+
+
+    <div class="container">
+        <div class="row" id="countfollow">
+            <div class="col">
+                <img src="../assets/profile/Component 40 – 1.png" id="profilefollower" onclick="follower()">
+            </div>
+            <div class="col">
+                <img src="../assets/profile/Component 42 – 1.png" id="profilefollowing"  onclick="following()">
+            </div>
+        </div>
+    </div>
+        <div class="row">
+            <div class="container" id="buttontitletab7">
+                <button type="button" class="btn" id="tab7triprout" onclick="trip()">Trip</button>
+                <button type="button" class="btn" id="tab7articlerout">Article</button>
+                <button type="button" class="btn" id="tab7draf" onclick="route()">Draft</button>
+                <button type="button" class="btn" id="tab7likedrout" onclick="likerout()">Liked</button>
+            </div>
+        </div>
+
+</div>
+
+<div>
+    <div class="row">
+        <img src="../assets/profile/Component 3 – 1.png" alt="" id="draftprofile">
+    </div>
+    <div class="row">
+        <img src="../assets/profile/Component 4 – 1.png" alt="" id="draftprofile">
+    </div>
+    <div class="row">
+        <img src="../assets/profile/Component 5 – 1.png" alt="" id="draftprofile">
+    </div>
+    <div class="row">
+        <img src="../assets/profile/Component 6 – 1.png" alt="" id="draftprofile" style="padding-bottom: 5em;">
+    </div>
+
+
+</div>
+<script>
+            function follower(){
+            $("#body").load("emty.html");
+            $("#headerprofile").load("emty.html");
+            $("#headerprofile").load("./profile/follower.html");
+            $("#footer").load("emty.html");
+        }
+
+        function following(){
+            $("#body").load("emty.html");
+            $("#headerprofile").load("emty.html");
+            $("#footer").load("emty.html");
+            $("#headerprofile").load("./profile/following.html");
+        }
+</script>

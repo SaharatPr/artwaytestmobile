@@ -1,35 +1,28 @@
+
+button#tab7likedrout {
+    background-color: #052238;
+    color: #FFFFFF;
+    border-radius: 18px;
+    width: 6em;
+}
+button#tab7draf {
+    background-color: #FFFFFF;
+    color: black;
+    border-radius: 18px;
+    width: 6em;
+}
+
 #routeprofile{
     background-color: #FFFFFF;
 }
 .row.icon-right {
     background-color: #FFFFFF;
 }
-#headerprofile {
+div#headerprofile {
     background-color: #FFFFFF;
 }
 #pictureprofile{
   
-}
-
-#tab7trip{
-    background-color: #FFFFFF;
-}
-button#tab7draf {
-    background-color: #052238;
-    color: #FFFFFF;
-    border-radius: 18px;
-    width: 6em;
-}
-
-div#countfollow {
-    box-shadow: 0px 3px 3px -3px #888888;
-}
-#profilefollower{
-    padding-bottom: 1em;
-}
-
-#profilefollowing{
-    padding-bottom: 1em;
 }
 
 .sidenav {
@@ -86,3 +79,10 @@ div#countfollow {
     font-weight: bold;
   
   }
+  div#countfollow {
+    box-shadow: 0px 3px 3px -3px #888888;
+}
+#profilefollower{
+    padding-bottom: 1em;
+}
+

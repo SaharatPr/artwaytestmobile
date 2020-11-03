@@ -16,7 +16,7 @@
                 <button type="button" class="btn" id="tab7trip">Trip</button>
                 <button type="button" class="btn" id="tab7article">Article</button>
                 <button type="button" class="btn" id="tab7article" onclick="route()">Route</button>
-                <button type="button" class="btn" id="tab7liked">Liked</button>
+                <button type="button" class="btn" id="tab7liked" onclick="tab7like()">Liked</button>
             </div>
         </div>
     </div>
@@ -69,10 +69,10 @@
     <div id="mySidenav" class="sidenav">
         <ul class="list-group list-group-flush">
             <li class="navbar-title">Account Setting</li>
-            <li class="">Basic infomation</li>
+            <li class="" onclick="information()">Basic infomation</li>
             <li class="">Change password</li>
             <li class="">Customise your intersts</li>
-            <li class="list-group-item">Privacy Setting</li>
+            <li class="">Privacy Setting</li>
           </ul>
           <ul class="list-group list-group-flush">
             <li class="navbar-title " id="navbar-title2"> Social Status</li>
@@ -93,6 +93,13 @@
             console.log("XXX");
             $("#headerprofile").load("./profile/route.html");
             $("#body").load("emty.html");
+        }
+
+        function tab7like(){
+            $("#body").load("emty.html");
+            $("#headerprofile").load("./profile/likes.html");
+
+            
         }
         function openNav() {
             console.log("XXXX");
@@ -126,5 +133,17 @@
             document.getElementById("tab7side").style.marginLeft = "0";
             // document.getElementById("buttontitletab7").style.marginRight = "0";
             // document.getElementById("tab7side").style.marginRight = "0";
+        }
+
+        function information(){
+            
+            $("#body").load("emty.html");
+            $("#headerprofile").load("emty.html");
+            $("#headerprofile").load("./profile/basicimformation.html");
+            $("#footer").load("emty.html");
+            document.getElementById("headerprofile").style.marginLeft = "0";
+
+           
+            document.getElementById("mySidenav").style.width = "0";
         }
     </script>
