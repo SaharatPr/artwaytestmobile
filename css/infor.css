@@ -8,3 +8,14 @@ div#headerprofile {
     padding-left: 0;
     padding-right: 0;
 }
+
+#picinfor{
+    padding-top: 2em;
+}
+
+div#thisweekp {
+    text-align: right;
+}
+#x{
+    padding-top: 1em;
+}

@@ -1,5 +1,8 @@
 body{
     background-color: #C1C1C1;
+
+        font-family: "Helvetica";
+    
 }
 
 #paneltitle{
@@ -7,6 +10,22 @@ body{
     -moz-box-shadow: 0px 6px 5px -4px rgba(168,168,168,1);
     box-shadow: 0px 6px 5px -4px rgba(168,168,168,1);
 }
+ /* #contenbackgroud:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 2px solid red;
+    width: 20px;
+    height: 20px;
+    border-color: #052238  #052238 white white;
+    border-radius: 0px 10px 0px 10px;
+    background: linear-gradient(45deg, #ffffff 50%, #052238 50%); /* W3C */
+    /* box-shadow: -3px 3px 3px -1px #888888; */
+    /* box-shadow: 0 9px 0px 0px white, 0 -9px 0px 0px white, 12px 0 15px -4px rgba(31, 73, 125, 0.8), -12px 0 15px -4px rgba(31, 73, 125, 0.8); */
+    /* box-shadow: 0px 0 0px 0px  white, 5px 0 15px 4p rgba(31, 73, 125, 0.8), 0px 0 0px 0px white, -12px 0 15px -4px rgba(31, 73, 125, 0.8); */
+  /* } */ 
+
 
 /*Don't forget to add Font Awesome CSS : "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"*/
 input[type="text"] {
@@ -21,6 +40,12 @@ input[type="text"] {
     height: 3em;
   }
   
+  #slidesugess1{
+      background-image: url('../assets/profile/Component 34 – 1.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
   input[type="text"]:focus {
     border-color: dodgerBlue;
     box-shadow: 0 0 8px 0 dodgerBlue;
@@ -28,7 +53,7 @@ input[type="text"] {
   
   .inputWithIcon input[type="text"] {
      padding-left: 40px; 
-
+     border-radius: 6px;
   }
   
   .inputWithIcon {
@@ -74,6 +99,9 @@ input[type="text"] {
     -moz-box-shadow: 0px 6px 5px -4px rgba(168,168,168,1);
     box-shadow: 0px 6px 5px -4px rgba(168,168,168,1);
     background-color: #ffffff;
+    position: fixed;
+    top: auto;
+    z-index: 2;
   }
 
   #seachtopic{
@@ -97,10 +125,13 @@ input[type="text"] {
     margin-right: -50%;
     transform: translate(-50%, -50%)
 }
+div#xxxxh{
+    padding-bottom: 1em;
+}
 #suggested{
     background-color: #052238;
     width: 100%;
-    margin-top: 1em !important;  
+    /* margin-top: 1em !important;   */
 }
 
 #contentsuggested{
@@ -110,6 +141,8 @@ input[type="text"] {
     color: white;
     padding-top: 1em;
     padding-left: 0.5em;
+    font-size: 1.3em;
+    font-weight: bold;
 }
 #contenbackgroud{
     background-image: url("../assets/tab2/Mask Group 52.png");
@@ -119,6 +152,24 @@ input[type="text"] {
     height: 100%; 
     padding-bottom: 0.5em;
 }
+#contenbackgroud1{
+    background-image: url("../assets/tab2/Component 5 – 1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%; 
+    padding-bottom: 0.5em;
+}
+
+#contenbackgroud2{
+    background-image: url("../assets/tab2/Component 6 – 1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%; 
+    padding-bottom: 0.5em;
+}
+
 
 #profilesugess{
     padding-top: 1em;
@@ -135,6 +186,12 @@ input[type="text"] {
     text-align: right;
 }
 
+#pin1{
+    text-align: right;
+}
+#pin2{
+    text-align: right;
+}
 #storesugess{
     position: relative;
     padding-top: 30%;
@@ -150,12 +207,14 @@ input[type="text"] {
 }
 
 #thisweek{
-    font-size: 1em;
+    font-size: 1.3em;
     font-weight: bold;
     color: #052238;
 }
 
 #see{
+    font-size: 1.2em;
+
     /* padding-top: 1.5em;  */
 }
 
@@ -184,7 +243,7 @@ input[type="text"] {
 }
 
 #staff{
-    font-size: 1em;
+    font-size: 1.3em;
     font-weight: bold;
     color: #052238;
 
@@ -197,7 +256,7 @@ input[type="text"] {
 
 #top{
     padding-top: 1.7em!important;
-    font-size: 1em;
+    font-size: 1.3em;
     font-weight: bold;
     color: #052238;
 
@@ -205,6 +264,7 @@ input[type="text"] {
 #seealltrip{
     text-align: right;
     padding-top: 1.7em;
+    font-size: 1.2em;
 }
 
 #recentview{
@@ -214,13 +274,14 @@ input[type="text"] {
 
 #recent{
     padding-top: 1.7em!important;
-    font-size: 1em;
+    font-size: 1.3em;
     font-weight: bold;
     color: #052238;
 }
 #seeallrecent{
     text-align: right;
     padding-top: 1.7em;
+    font-size: 1.2em;
 }
 
 .modal-dialog {
@@ -303,10 +364,10 @@ div#thisweekpic2{
       .swiper-wrapper {
         width: 50%;
       }
-      .swiper-slide {
+      /* .swiper-slide {
         text-align: center;
         width: auto !important;
-      }
+      } */
       .slide-image {
         width: auto;
       }
@@ -317,3 +378,13 @@ div#thisweekpic2{
           padding-top: 1em;
           font-size: 1.3em;
       }
+#sugessslidecenter{
+    width: 0;
+}
+div#slidecenter {
+    width: auto !important;
+}
+div#seeall {
+    f: 1/2em;
+    font-size: 1em;
+}

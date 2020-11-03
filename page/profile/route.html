@@ -30,7 +30,7 @@
         </div>
     <div class="subcontentrout">
         <div class="row">
-            <img src="../assets/profile/Component 38 – 1.png" alt="" id="draftprofile">
+            <img src="../assets/profile/Component 38 – 1.png" alt="" id="draftprofile" onclick="postdraf()">
         </div>
 
         <div class="row">
@@ -45,7 +45,7 @@
 <div id="mySidenav" class="sidenav">
     <ul class="list-group list-group-flush">
         <li class="navbar-title">Account Setting</li>
-        <li class="">Basic infomation</li>
+        <li class=""  onclick="information()">Basic infomation</li>
         <li class="">Change password</li>
         <li class="">Customise your intersts</li>
         <li class="">Privacy Setting</li>
@@ -126,5 +126,25 @@
             $("#footer").load("emty.html");
             
             $("#headerprofile").load("./profile/following.html");
+        }
+
+        function information(){
+                        
+            $("#body").load("emty.html");
+            $("#headerprofile").load("emty.html");
+            $("#headerprofile").load("./profile/basicimformation.html");
+            $("#footer").load("emty.html");
+            document.getElementById("headerprofile").style.marginLeft = "0";
+
+           
+            document.getElementById("mySidenav").style.width = "0";
+        }
+
+        function postdraf(){
+            $("#body").load("emty.html");
+            $("#headerprofile").load("emty.html");
+            $("#footer").load("emty.html");
+            
+            $("#headerprofile").load("./profile/postdraf.html");
         }
 </script>

@@ -12,6 +12,7 @@
 #profile{
     justify-content: center;
     padding-bottom: 1em;
+    width: 100%;
 }
 
 button#tab7trip {
@@ -83,6 +84,7 @@ div#body {
 
   #tab5content{
     background-color: #FFFFFF;
+    padding-top: 1em;
   }
 
   p{
@@ -90,6 +92,7 @@ div#body {
   }
   img#finalimages {
     padding-bottom: 6em;
+    width: 100%;
 }
 
 .sidenav {
@@ -153,7 +156,33 @@ div#body {
 
 img#draftprofile {
     padding-top: 2em;
+    width: 100%;
 }
 .draftprofile{
     padding-bottom: 5em;
+}
+div#trip10 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+div#tab7seeall {
+  text-align: right;
+  align-self: center;
+  font-size: 1.2em;
+  right: -1em;
+}
+img#picturecontent1 {
+  width: 100%;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #052238;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 1em;
 }

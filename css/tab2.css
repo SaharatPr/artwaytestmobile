@@ -81,7 +81,7 @@ span{
     border-radius: 10px;
     background-color: white;
   }
-#harf:before {
+/* #harf:before {
     content: "";
     position: absolute;
     top: 0;
@@ -91,10 +91,9 @@ span{
     height: 20px;
     border-color: #BDC2C4  #BDC2C4 white white;
     border-radius: 0px 10px 0px 10px;
-    background: linear-gradient(45deg, #ffffff 50%, #BDC2C4 50%); /* W3C */
+    background: linear-gradient(45deg, #ffffff 50%, #BDC2C4 50%);
     box-shadow: -3px 3px 3px -1px #888888;
-    /* box-shadow: 0 9px 0px 0px white, 0 -9px 0px 0px white, 12px 0 15px -4px rgba(31, 73, 125, 0.8), -12px 0 15px -4px rgba(31, 73, 125, 0.8); */
-    /* box-shadow: 0px 0 0px 0px  white, 5px 0 15px 4p rgba(31, 73, 125, 0.8), 0px 0 0px 0px white, -12px 0 15px -4px rgba(31, 73, 125, 0.8); */
+   
   }
   #harf-2:before {
     content: "";
@@ -106,12 +105,10 @@ span{
     height: 20px;
     border-color: #052238  #052238 white white;
     border-radius: 0px 10px 0px 10px;
-    background: linear-gradient(45deg, #ffffff 50%, #052238 50%); /* W3C */
+    background: linear-gradient(45deg, #ffffff 50%, #052238 50%); 
     box-shadow: -3px 3px 3px -1px #888888;
-    /* box-shadow: -10px 10px 10px -1px #888888; */
-    /* box-shadow: 0 9px 0px 0px white, 0 -9px 0px 0px white, 12px 0 15px -4px rgba(31, 73, 125, 0.8), -12px 0 15px -4px rgba(31, 73, 125, 0.8); */
-    /* box-shadow: 0px 0 0px 0px  white, 5px 0 15px 4p rgba(31, 73, 125, 0.8), 0px 0 0px 0px white, -12px 0 15px -4px rgba(31, 73, 125, 0.8); */
-  }
+  
+  } */
 .container{
     text-align: center !important;
     justify-content: center !important;
@@ -145,8 +142,10 @@ footer{
 }
 
 #xxx{
-    position: relative;
-    bottom: 1.5em;
+    position: fixed;
+    bottom: 5em;
+    right: 1em;
+    z-index: 1;
 }
 
 #iconpicture{
@@ -207,4 +206,26 @@ footer{
     font-size: 23px !important;
     color: white !important;
 
+}
+img#word {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 0.2em;
+}
+div#tab2pic1 {
+    position: inherit;
+    top: 0;
+}
+div#tab2pic2 {
+    position: inherit;
+    top: 0;
+}
+div#tab2pic3 {
+    position: inherit;
+    top: 0;
+}
+div#tab2pic4 {
+    position: inherit;
+    top: 0;
 }

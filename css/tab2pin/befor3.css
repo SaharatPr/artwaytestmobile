@@ -1,0 +1,14 @@
+#tab2pic3:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 2px solid red;
+    width: 20px;
+    height: 20px;
+    border-color: #052238  #052238 white white;
+    border-radius: 0px 10px 0px 10px;
+    background: linear-gradient(45deg, #ffffff 50%, #BDC2C4 50%);
+    box-shadow: -3px 3px 3px -1px #888888;
+   
+  }

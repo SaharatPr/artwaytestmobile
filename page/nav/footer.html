@@ -1,59 +1,67 @@
 <footer class="fixed-bottom" id="footerfixed">
     <div class="container-fluid" id="footernav" >
-        <div class="row" >
+        <div class="row" id="rownav">
 
-          <div class="col" style=" width: 13%;" id="iconfooter">
-            <img src="../assets/feed/1.png" id="iconpicture" onclick="switchTab1()">
+          <div class="col icon_1"  id="iconfooter1">
+            <img src="../assets/Icon_explore.svg" id="iconpicture" onclick="switchTab1()">
           </div>
-          <div class="col" style=" width: 13%;" id="iconfooter">
-            <img src="../assets/feed/2.png" id="iconpicture" onclick="switchTab2()">
+          <div class="col icon_2"  id="iconfooter2">
+            <img src="../assets/Icon_newfeed.svg" id="iconpicture" onclick="switchTab2()">
           </div>
-          <div class="col" style="width: 13%;" id="iconfooter">
+          <!-- <div class="col" id="iconfooter">
            <img src="../assets/feed/3.png" id="iconpicture" onclick="switchTab3()">
-          </div>
-          <div class="col" style="width: 22%;" id="iconfootermiddle">
+          </div> -->
+          <!-- <div class="col"  id="iconfootermiddle">
                 <div id="xxx">
                     <img src="../assets/feed/4.png" id="iconmiddle" onclick="switchTab4()">
                 </div>
-               
-            
-          </div>
-          <div class="col" style="width: 13%;" id="iconfooter">
+          </div> -->
+          <!-- <div class="col"  id="iconfooter">
             <img src="../assets/feed/5.png" id="iconpicture" onclick="switchTab5()">
+          </div> -->
+          <div class="col icon_6"  id="iconfooter6">
+            <img src="../assets/Icon_noti.svg" id="iconpicture" onclick="switchTab6()">
           </div>
-          <div class="col" style=" width: 13%;" id="iconfooter">
-            <img src="../assets/feed/6.png" id="iconpicture" onclick="switchTab6()">
+          <div class="col icon_7"  id="iconfooter7" >
+           <img src="../assets/Icon_myprofile.svg" id="iconpicture" onclick="switchTab7()">
           </div>
-          <div class="col" style=" width: 13%;" id="iconfooter">
-           <img src="../assets/feed/7.png" id="iconpicture" onclick="switchTab7()">
-          </div>
-
+ 
         </div>
-      </div>
-</footer>
+ 
 
+
+      </div>
+
+</footer>
+<div id="xxx">
+  <img src="../assets/feed/4.png" id="iconmiddle" onclick="switchTab4()">
+</div>
 <script>
   function  switchTab1(){
     console.log("tab 1");
-        // $('#contentstory').load("./tab/tab1.html");
-        // // $("#header").load("./nav/header.html");
-        // $("#footer").load("./nav/footer.html");
-        // $('#contentstory').load("./tab/tab1.html");
-        // $("#appcontent").load("emty.html");
+    document.getElementById("iconfooter1").innerHTML = ` <img src="../assets/Icon_explore.svg" id="iconpicture" onclick="switchTab1()">` ;
+    document.getElementById("iconfooter2").innerHTML = ` <img src="../assets/Icon_newfeed.svg" id="iconpicture" onclick="switchTab2()">` ;
+     document.getElementById("iconfooter6").innerHTML = ` <img src="../assets/Icon_noti.svg" id="iconpicture" onclick="switchTab6()">`;
+     document.getElementById("iconfooter7").innerHTML = ` <img src="../assets/Icon_myprofile.svg" id="iconpicture" onclick="switchTab7()">`;
+
 
             $("#contentapp").load("emty.html");
-        //     $("#header").load("./nav/header.html");
             $("#header").load("./nav/header.html");
-        //     $("#footer").load("./nav/footer.html");
              $('#contentstory').load("./tab/tab1.html");
 
     }
     function switchTab2(){
-      console.log("tab2");
+
         $('#contentstory').load("./tab/tab2.html");
+        document.getElementById("iconfooter1").innerHTML = ` <img src="../assets/Default_explore.svg" id="iconpicture" onclick="switchTab1()">` ;
+        document.getElementById("iconfooter2").innerHTML = ` <img src="../assets/icon_1.svg" id="iconpicture" onclick="switchTab2()">` ;
+        document.getElementById("iconfooter6").innerHTML = ` <img src="../assets/Icon_noti.svg" id="iconpicture" onclick="switchTab6()">`;
+     document.getElementById("iconfooter7").innerHTML = ` <img src="../assets/Icon_myprofile.svg" id="iconpicture" onclick="switchTab7()">`;
+     $("#header").load("./nav/header.html");
     }
     function switchTab3(){
       console.log("tab3");
+     
         $('#contentstory').load("./tab/tab3.html");
         $("#header").load("emty.html");
     }
@@ -62,11 +70,21 @@
     }
     function switchTab5(){
         $('#contentstory').load("./tab/tab5.html");
+        
     }
     function switchTab6(){
+      console.log("tab6");
+      document.getElementById("iconfooter1").innerHTML = ` <img src="../assets/Default_explore.svg" id="iconpicture" onclick="switchTab1()">`
+      document.getElementById("iconfooter2").innerHTML = ` <img src="../assets/Icon_newfeed.svg" id="iconpicture" onclick="switchTab2()">`
+      document.getElementById("iconfooter6").innerHTML = ` <img src="../assets/Icon_2.svg" id="iconpicture" onclick="switchTab6()">` ;
+      document.getElementById("iconfooter7").innerHTML = ` <img src="../assets/Icon_myprofile.svg" id="iconpicture" onclick="switchTab7()">`;
         $('#contentstory').load("./tab/tab6.html");
     }
     function switchTab7(){
+      document.getElementById("iconfooter1").innerHTML = ` <img src="../assets/Default_explore.svg" id="iconpicture" onclick="switchTab2()">`
+      document.getElementById("iconfooter2").innerHTML = ` <img src="../assets/Icon_newfeed.svg" id="iconpicture" onclick="switchTab2()">`
+      document.getElementById("iconfooter7").innerHTML = ` <img src="../assets/Icon_3.svg" id="iconpicture" onclick="switchTab7()">` ;
+      document.getElementById("iconfooter6").innerHTML = ` <img src="../assets/Icon_noti.svg" id="iconpicture" onclick="switchTab6()">`;
       $("#header").load("emty.html");
         $('#contentstory').load("./tab/tab7.html");
     }

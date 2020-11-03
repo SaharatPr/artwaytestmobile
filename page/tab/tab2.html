@@ -1,10 +1,10 @@
 <link rel="stylesheet" href="../css/tab2.css">
-<div class="container" id="icontab">
+<!-- <div class="container" id="icontab">
     <img src="../assets/tab2/Group 1180.png">
-</div>
+</div> -->
 <div class="container" id="content">
     <div id="card">
-        <div id="harf">
+        <div id="tab2pic1">
         </div>
         <div class="row">
             <div class="col-2" id="picture">
@@ -12,6 +12,9 @@
             </div>
             <div class="col " id="name">
                 <p>ADddddy</p>
+            </div>
+            <div class="col" id="tab2pic1">
+                <img src="../assets/Component 2 – 1.png"  onclick="tab2pic1()" id="word">
             </div>
         </div>
         <div class="row">
@@ -59,7 +62,7 @@
 <!-- ==============================================================-->
 <div class="container" id="content">
     <div id="card">
-        <div id="harf">
+        <div id="tab2pic2">
         </div>
         <div class="row">
             <div class="col-2" id="picture">
@@ -67,6 +70,9 @@
             </div>
             <div class="col " id="name">
                 <p>ADddddy</p>
+            </div>
+            <div class="col" id="tab2pic2">
+                <img src="../assets/Component 2 – 1.png"   onclick="tab2pic2()" id="word">
             </div>
         </div>
         <div class="row">
@@ -118,7 +124,7 @@
             <p>SUGGESTED</p>
         </div>
         <div class="container" id="sugess-card">
-            <div id="contenbackgroud">
+            <div id="tab2pic3">
                 <div class="row">
                     <div class="col-2">
                         <img src="../assets/tab2/Ellipse 1.png" id="profilesugess">
@@ -127,7 +133,7 @@
                         <p>ADddddy</p>
                     </div>
                     <div class="col" id="pin">
-                        <p> <img src="../assets/tab2/Group 1203.png"></p>
+                        <p> <img src="../assets/tab2/Group 1203.png" onclick="tab2pic3()"></p>
                     </div>
                 </div>
 
@@ -159,7 +165,7 @@
 <!--=====================================================================================-->
 <div class="container" id="content">
     <div id="card">
-        <div id="harf-2">
+        <div id="tab2pic4">
         </div>
         <div class="row">
             <div class="col-2" id="picture">
@@ -167,6 +173,9 @@
             </div>
             <div class="col " id="name">
                 <p>ADddddy</p>
+            </div>
+            <div class="col" id="tab2pic4">
+                <img src="../assets/Component 2 – 1.png"  onclick="tab2pic4()" id="word">
             </div>
         </div>
         <div class="row">
@@ -213,7 +222,7 @@
 
 <div class="container" id="content">
     <div id="card">
-        <div id="harf-2">
+        <div id="tab2pic5">
         </div>
         <div class="row">
             <div class="col-2" id="picture">
@@ -221,6 +230,9 @@
             </div>
             <div class="col " id="name">
                 <p>ADddddy</p>
+            </div>
+            <div class="col" id="tab2pic5">
+                <img src="../assets/Component 2 – 1.png"  onclick="tab2pic5()" id="word">
             </div>
         </div>
         <div class="row">
@@ -265,4 +277,31 @@
     </div>
 </div>
 
-<script src="../js/tab2.js"></script>
+<!-- <script src="../js/tab2.js"></script> -->
+
+<script>
+    function tab2pic1(){
+        $(".modal-content").load("./tab/tab1.html #create-bord-defu");
+        $('#tab2pic1').load('./tab/tab2pin/before1.html');
+    }
+
+    function tab2pic2(){
+        $(".modal-content").load("./tab/tab1.html #create-bord-defu");
+        $('#tab2pic2').load('./tab/tab2pin/before2.html');
+    }
+
+    function tab2pic3(){
+        $(".modal-content").load("./tab/tab1.html #create-bord-defu");
+        $('#tab2pic3').load('./tab/tab2pin/before3.html');
+    }
+
+    function tab2pic4(){
+        $(".modal-content").load("./tab/tab1.html #create-bord-defu");
+        $('#tab2pic4').load('./tab/tab2pin/before4.html');
+    }
+
+    function tab2pic5(){
+        $(".modal-content").load("./tab/tab1.html #create-bord-defu");
+        $('#tab2pic5').load('./tab/tab2pin/before5.html');
+    }
+</script>
