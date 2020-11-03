@@ -96,7 +96,7 @@ div#rownav {
 margin-bottom: 2em
 }
 div#header {
-    position: sticky;
+    position: fixed;
     z-index: 3;
     top: 0;
     width: 100%;
