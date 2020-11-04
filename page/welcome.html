@@ -1,0 +1,35 @@
+<style>
+    div#welcome {
+    /* width: 200px; */
+    height: 200px;
+    position: absolute;
+    /* background-color: #00FF00; */
+    top: 50%;
+    /* left: 50%; */
+    margin-top: -100px;
+    /* margin-left: -100px; */
+}
+img {
+    padding-bottom: 2em;
+}
+</style>
+<div class="container" id="welcome">
+    <div id="textwelcome">
+        <img src="../assets/welcome/Component 1 – 1.png">
+    </div>
+    <div id="picturewelcome">
+        <img src="../assets/welcome/Component 2 – 1.png" onclick="switchTab1()">
+            </div>
+</div>
+
+<script>
+ 
+        function switchTab1(){
+            console.log("DDWDW");
+          $("#contentapp").load("emty.html");
+            $("#header").load("./nav/header.html");
+             $("#footer").load("./nav/footer.html");
+             $('#contentstory').load("./tab/tab1.html");
+        
+    }
+</script>

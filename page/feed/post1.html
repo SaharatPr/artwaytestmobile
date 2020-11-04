@@ -1,0 +1,78 @@
+<link rel="stylesheet" href="../css/feed/post1.css">
+<div class="container-fluid p-3 mb-5 bg-white rounded" id="thisweekheader">
+    <div class="row">
+        <div class="col" id="thisweekkeyboard_arrow_left" >
+            <span class="material-icons text-center" style="font-size: 50px;" onclick="switchTab2Page()">
+                keyboard_arrow_left
+                </span>
+        </div>
+        <div class="col" id="thisweekp" >
+          <p class=" text-right" id="yourtript">YOUR TRIP</p>  
+        </div>
+    </div>
+    <div class="row" id="map">
+        <div class="" id="pin1day">
+            <img src="../assets/tab2feed/save.png"  onclick="pin1day()" id="word">
+        </div>
+        <img src="../assets/tab2feed/Component 1 – 1.png" id="picturemap" style="
+        width: 100%;
+    ">
+    </div>
+</div>
+
+<div class="container" id="userposttab2">
+    <div class="row">
+        <div class="col">
+            <img src="../assets/tab2feed/Component 2 – 1.png">
+        </div>
+        <div class="col">
+            <div class="row" id="iconlike">
+
+                    <img src="../assets/tab2feed/Component 5 – 1.png" id="icon1">
+                   
+     
+
+                    <img src="../assets/tab2feed/Component 3 – 1.png" id="icon2">
+                  
+ 
+
+                    <img src="../assets/tab2feed/Component 4 – 1.png" id="icon3">
+
+            </div>
+        </div>
+    </div>
+
+    <div id="tab2postcontent">
+        <img src="../assets/tab2feed/Component 6 – 1.png" style="
+        width: 100%;
+    ">
+    </div>
+
+</div>
+<div class="container" id="tab2hastag">
+    
+<img src="../assets/tab2feed/Component 14 – 1.png" style="
+width: 100%;
+">
+
+
+</div>
+
+  <script>
+      function contentPost(){
+         $("#contentapp").load('post.html');
+      }
+
+      function switchTab2Page(){
+        $("#header").load("./nav/header.html");
+            $("#footer").load("./nav/footer.html");
+            $('#contentstory').load("./tab/tab2.html");
+            $('#contentapp').load('emty.html');
+      }
+
+      function pin1day(){
+        $(".modal-content").load("./tab/tab1.html #create-bord-defu");
+        $('#picturemap').load("./tab2pin/trip1day/befor1.html");
+        $('#pin1day').load("emty.html");
+      }
+  </script>

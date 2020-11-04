@@ -74,6 +74,7 @@
     }
     function switchTab6(){
       console.log("tab6");
+      $("#header").load("emty.html");
       document.getElementById("iconfooter1").innerHTML = ` <img src="../assets/Default_explore.svg" id="iconpicture" onclick="switchTab1()">`
       document.getElementById("iconfooter2").innerHTML = ` <img src="../assets/Icon_newfeed.svg" id="iconpicture" onclick="switchTab2()">`
       document.getElementById("iconfooter6").innerHTML = ` <img src="../assets/Icon_2.svg" id="iconpicture" onclick="switchTab6()">` ;

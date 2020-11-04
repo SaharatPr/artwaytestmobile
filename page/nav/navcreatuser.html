@@ -4,7 +4,7 @@
             keyboard_arrow_left
             </span>
     </span>
-    <span  id="next"  onclick="switchFeedPage()">
+    <span  id="next"  onclick="switchWelcomePage()">
        NEXT
 
       </span>
@@ -25,5 +25,11 @@
             $("#header").load("./nav/header.html");
              $("#footer").load("./nav/footer.html");
              $('#contentstory').load("./tab/tab1.html");
+      }
+      function switchWelcomePage(){
+          $("#contentapp").load("welcome.html");
+            $("#header").load("emty.html");
+             $("#footer").load("emty.html");
+             $('#contentstory').load("emty.html");
       }
   </script>

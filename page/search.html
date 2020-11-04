@@ -1,25 +1,187 @@
 <link rel="stylesheet" href="../css/search.css">
 <div class="container-fluid" id="headersearch">
     <div class="row">
-        <div class="col-2">
+        <div class="col-1" style="
+        left: 0;
+        padding-left: initial;
+    ">
             <span class="material-icons" style="font-size: 50px;" onclick="switchTab1Page()">
                 keyboard_arrow_left
                 </span>
         </div>
         <div class="col">
-            <div class="inputWithIcon"  onclick="search()">
-                <input type="text" placeholder="Where do you want to go ?">
+            <div class="inputWithIcon" id="seacrchdata2">
+                <input type="text" placeholder="Where do you want to go ?"
+                onfocus="this.placeholder='Chiang mai, Thaialand'"
+                >
+                
                 <i class="fa fa-search fa-lg fa-fw" aria-hidden="true"></i>
             </div>
         </div>
-        <div class="col-2">
+        <!-- <div class="col-2">
             <div class="inputWithIcon">
                 <img src="../assets/tab1/Group 787.png">
             </div>
-        </div>
+        </div> -->
     </div>
 </div>
-<div class="row" style="justify-content: center; padding-top: 1em;">
+
+<ul class="list-group list-group-flush">
+    <li class="list-group-item">
+        <div class="container row">
+            <div class="col text-left">
+                Recent
+            </div>
+            <div class="col text-right">
+                Clear
+            </div>
+        </div>
+        <div class="row" id="history">
+            <div class="col">
+                <img src="../assets/search/Component 2 – 1.png" style="width: 3em;vertical-align: revert">
+                Island
+            </div>
+                <div class="col">
+                    <img src="../assets/search/Component 2 – 1.png" style="width: 3em;vertical-align: revert">
+                    bkkdw
+                </div>            
+                <div class="col">
+                    <img src="../assets/search/Component 2 – 1.png" style="width: 3em;vertical-align: revert">
+                    Music Festival
+                </div>           
+                 <div class="col">
+                    <img src="../assets/search/Component 2 – 1.png" style="width: 3em;vertical-align: revert">
+                    Kaosab bar
+                </div>
+                <div class="col">
+                    </div>
+                    <div class="col-4">
+                    </div>
+        </div>
+    </li>
+    <li class="list-group-item">
+       <p>Trending Search</p> 
+        <div class="row">
+            <div class="col-1">
+                <img src="../assets/search/Component 3 – 1.png">
+            </div> 
+            <div class="col-11">
+               <p>BKK Designweek 2020</p> 
+            </div> 
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <img src="../assets/search/Component 3 – 1.png">
+            </div> 
+            <div class="col-11">
+                <p> Phuket festival</p>
+               
+            </div> 
+        </div>        <div class="row">
+            <div class="col-1">
+                <img src="../assets/search/Component 3 – 1.png">
+            </div> 
+            <div class="col-11">
+                <p> GMM Online Festival x VLIVE</p>
+               
+            </div> 
+        </div>
+    </li>
+    <li class="list-group-item">
+ 
+        Filter
+
+        <div class="row">
+            <div class="container text-left">
+             Duration
+            </div>
+            <div class="col">
+                <input type="range" min="0" max="10" value="5"  id="duration">
+                <!-- <input type="range" min="1" max="10" value="1" class="slider" id="duration"> -->
+                <p id="durationtext">
+                    5 Day
+                </p>
+            </div>
+            <div class="container text-left">
+                Budget
+            </div>
+
+            <div class="col">
+                
+                <input type="range" min="0" max="10000" value="5000" id="budget">
+                <p id="budgettext">
+                    5000 Bath
+                </p>
+            </div>
+        </div>
+        <div claas="row">
+            Interest
+            <div class="container" style="
+            padding-top: 1em;
+        ">
+            <div class="row container">
+                    <label class="col container text-left" id="checkboxoverlay">Adventure
+                    <input type="checkbox" onclick="checkbox(1)" id="checktemp1">
+                    <span class="checkmark" id="checkbox1"></span>
+                  </label>
+                  
+            </div>
+
+            <div class="row container">
+                <label class="col container text-left" id="checkboxoverlay">Shopping
+                    <input type="checkbox" onclick="checkbox(2)" id="checktemp2">
+                    <span class="checkmark"  id="checkbox2"></span>
+                  </label>
+
+            </div>
+            <div class="row container">
+                <label class="col container text-left" id="checkboxoverlay"> Party & Night Life
+                    <input type="checkbox" onclick="checkbox(3)" id="checktemp3">
+                    <span class="checkmark"  id="checkbox3"></span>
+                  </label>
+
+            </div>
+            <div class="row container">
+                <label class="col container text-left" id="checkboxoverlay"> Foodie
+                    <input type="checkbox"  onclick="checkbox(4)" id="checktemp4">
+                    <span class="checkmark"  id="checkbox4"></span>
+                  </label>
+            </div>
+            <div class="row container">
+                <label class="col container text-left" id="checkboxoverlay">Art & Culture
+                    <input type="checkbox"  onclick="checkbox(5)" id="checktemp5">
+                    <span class="checkmark"  id="checkbox5"></span>
+                  </label>
+            </div>
+            <div class="row container">
+                <label class="col container text-left" id="checkboxoverlay">Festival
+                    <input type="checkbox" onclick="checkbox(6)" id="checktemp6">
+                    <span class="checkmark"  id="checkbox6"></span>
+                  </label>
+            </div>
+            <div class="row container">
+                <label class="col container text-left" id="checkboxoverlay">Experience
+                    <input type="checkbox" onclick="checkbox(7)" id="checktemp7">
+                    <span class="checkmark"  id="checkbox7"></span>
+                  </label>
+            </div>
+            <div class="row container">
+                <label class="col container text-left" id="checkboxoverlay">Nature
+                    <input type="checkbox" onclick="checkbox(8)" id="checktemp8">
+                    <span class="checkmark"   id="checkbox8"></span>
+                  </label>
+            </div>
+        </div>
+    </div>
+        <div class="container" id="buttonsubmit">
+            <img src="../assets/search/Component 7 – 1.png">
+        </div>
+    </li>
+
+  </ul>
+
+
+<!-- <div class="row" style="justify-content: center; padding-top: 1em;">
     <img src="../assets/search/Component 8 – 1.png">
 </div>
 <div class="row" style="justify-content: center; padding-top: 1em;">
@@ -27,13 +189,42 @@
 </div>
 <div class="row" style="justify-content: center; padding-top: 2em; padding-bottom: 2em;">
     <img src="../assets/search/Component 7 – 1.png">
-</div>
-</div>
+</div> -->
+<!-- </div> -->
 <script>
+        $("#searchdata2").click(function(e){
+
+
+ });
+   document.getElementById("duration").oninput = function() {
+       console.log(this.value*10);
+    document.getElementById("durationtext").innerHTML = (this.value)+" Day";
+  this.style.background = 'linear-gradient(to right, #052238 0%, #052238 ' + (this.value*10)+ '%, #E8E8E8 ' + (this.value*10) + '%, #E8E8E8 100%)'
+};
+document.getElementById("budget").oninput = function() {
+  this.style.background = 'linear-gradient(to right, #052238 0%, #052238 ' + this.value/100 + '%, #E8E8E8 ' + this.value/100 + '%, #E8E8E8 100%)'
+  document.getElementById("budgettext").innerHTML = (this.value)+" Bath";
+};
           function switchTab1Page(){
             $("#header").load("./nav/header.html");
             $("#footer").load("./nav/footer.html");
             $('#contentstory').load("./tab/tab1.html");
             $('#contentapp').load('emty.html');
+            document.getElementById("iconmiddle").style.display = "flex";
+      }
+      
+      function checkbox(num){
+
+        if($("#checktemp"+num).prop("checked")){
+         document.getElementById(`checkbox${num}`).style.borderColor = "#FF721A"
+            return;
+
+        }
+
+            console.log("2");
+            document.getElementById(`checkbox${num}`).style.borderColor = "#052238"
+        
+       
+       
       }
 </script>

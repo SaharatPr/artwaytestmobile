@@ -24,6 +24,7 @@ body{
 
 #picturecontent1{
     margin: auto;
+    padding-bottom: 2em;
     width: 100%;
 }
 
@@ -31,7 +32,7 @@ body{
     color: black;
     text-align: left;
     font-size: 0.7em;
-    margin-left: -15px;
+    /* margin-left: -15px; */
 }
 #title{
     color: black !important;
@@ -232,4 +233,71 @@ div#tab2pic4 {
 div#tab2pic5 {
     position: inherit;
     top: 0;
+}
+
+.modal-content {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    outline: 0;
+    border-top-left-radius: 20px !important;
+    border-top-right-radius: 20px !important;
+    /* border-radius: 20px,20px,0px,0px !important; */
+}
+
+#modal-create-bord{
+    height: 50%;
+    justify-content: center;
+}
+.modal-dialog {
+    position:fixed;
+    top:auto;
+    right:auto;
+    left:auto;
+    bottom:0;
+    width: 100%;
+    margin-left: 1px;
+
+  }
+
+  #selectpicture{
+    margin-left: 1em;
+    margin-bottom: 1em;
+  } 
+  #inputbordname{
+    font-size: 1em;
+    width: 90%;
+    text-align: center;
+    margin-top: 3.5em;
+    margin-bottom: 17em;
+    top: auto;
+    left: 0;
+    right: 0;
+    justify-self: end;
+    border-radius: 15px;
+}
+
+input[type="text"] {
+    width: 100%;
+    border: 0px solid #aaa;
+    border-radius: 4px;
+    background-color: #EAEAEA;
+    outline: none;
+    font-size: 0.7em;
+    box-sizing: border-box;
+    transition: 0.3s;
+    height: 3em;
+  }
+  #iconmiddle {
+    width: 4em;
+    height: 4em;
+    display: none;
 }

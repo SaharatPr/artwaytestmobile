@@ -1,0 +1,93 @@
+nav.navbar.navbar-inner.flixed-top {
+    background-color: #FFFFFF;
+}
+div#map {
+    justify-content: center;
+    text-align: center;
+    /* width: 100%; */
+    left: 0 !important;
+    right: 0 !important;
+}
+.mb-5, .my-5 {
+     margin-bottom: 0rem!important; 
+}
+div#userposttab2 {
+    margin-top: 1em;
+}
+
+div#iconlike {
+    text-align: right;
+    justify-content: right;
+    right: 0;
+    justify-content: flex-end;
+    padding-right: 1em;
+}
+#icon1 {
+    padding-right: 1em;
+}
+#icon2 {
+    padding-right: 1em;
+}
+div#tab2postcontent {
+    padding-top: 1em;
+}
+#iconmiddle {
+    width: 4em;
+    height: 4em;
+    display: none;
+}
+div#tab2hastag {
+    width: 100% !important;
+    justify-content: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.text-right {
+    text-align: right!important;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+div#thisweekheader {
+    z-index: 1;
+    position: sticky;
+    top: 0;
+}
+
+div#picturemap{
+    left: 0 !important;
+    right: 0 !important;
+    width: 100%;
+}
+div#pin1day {
+    position: absolute;
+    right: 0;
+}
+
+div#coutday {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 2em;
+}
+
+img#daynumber1 {
+    padding-right: 0.5em;
+}
+img#daynumber2 {
+    padding-right: 0.5em;
+}
+img#daynumber3 {
+    padding-right: 0.5em;
+}
+div#tripday1 {
+    padding-top: 1em;
+}
+div#tripday2 {
+    padding-top: 1em;
+}
+div#tripday3 {
+    padding-top: 1em;
+}
+html {
+    scroll-behavior: smooth;
+  }

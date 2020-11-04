@@ -14,25 +14,31 @@
                 <p>ADddddy</p>
             </div>
             <div class="col" id="tab2pic1">
-                <img src="../assets/Component 2 – 1.png"  onclick="tab2pic1()" id="word">
+                <img src="../assets/Component 2 – 1.png"  onclick="tab2pic1()" id="word" data-toggle="modal" data-target=".bs-example-modal-lg">
             </div>
         </div>
         <div class="row">
-            <div class="col" id="title">
+            <div class="col" id="title" onclick="feedpost1()">
                 <p>แชะรูปกับคาเฟรอบอารีย์ สแกนดิเนเวียใจกลางกรุง </p>
             </div>
-        </div>
-
-        <div class="row">
-            <img src="../assets/tab2/Group 985.png" id="picturecontent1">
         </div>
         <div class="row">
             <div class="col" id="story">
                 <p>Lorem ipsum dolor sit amet, consectetur
                     adipiscing elit, sed do eiusmod tempor
-                    incididunt ua. <span>see more</span></p>
+                    incididunt ua. <span>.........</span></p>
             </div>
         </div>
+        <div class="" onclick="feedpost1()">
+            <img src="../assets/tab2/Group 985.png" id="picturecontent1">
+        </div>
+        <!-- <div class="row">
+            <div class="col" id="story">
+                <p>Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor
+                    incididunt ua. <span>see more</span></p>
+            </div>
+        </div> -->
 
         <diV class="row">
             <div class="col-1">
@@ -72,25 +78,25 @@
                 <p>ADddddy</p>
             </div>
             <div class="col" id="tab2pic2">
-                <img src="../assets/Component 2 – 1.png"   onclick="tab2pic2()" id="word">
+                <img src="../assets/Component 2 – 1.png"   onclick="tab2pic2()" id="word" data-toggle="modal" data-target=".bs-example-modal-lg">
             </div>
         </div>
         <div class="row">
-            <div class="col" id="title">
-                <p>แชะรูปกับคาเฟรอบอารีย์ สแกนดิเนเวียใจกลางกรุง </p>
+            <div class="col" id="title" onclick="feedpost2()">
+                <p>แชะรูปกับคาเฟรอบอารีย์ สแกนดิเนเวียใจกลางกรุงxxx </p>
             </div>
-        </div>
-
-        <div class="row">
-            <img src="../assets/tab2/Group 985.png" id="picturecontent1">
         </div>
         <div class="row">
             <div class="col" id="story">
                 <p>Lorem ipsum dolor sit amet, consectetur
                     adipiscing elit, sed do eiusmod tempor
-                    incididunt ua. <span>see more</span></p>
+                    incididunt ua. <span>>.........</span></p>
             </div>
         </div>
+        <div class=""  onclick="feedpost2()">
+            <img src="../assets/tab2/Group 985.png" id="picturecontent1">
+        </div>
+
 
         <diV class="row">
             <div class="col-1">
@@ -170,7 +176,7 @@
                 <p>ADddddy</p>
             </div>
             <div class="col" id="tab2pic4">
-                <img src="../assets/Component 2 – 1.png"  onclick="tab2pic4()" id="word">
+                <img src="../assets/Component 2 – 1.png"  onclick="tab2pic4()" id="word" data-toggle="modal" data-target=".bs-example-modal-lg">
             </div>
         </div>
         <div class="row">
@@ -178,17 +184,17 @@
                 <p>แชะรูปกับคาเฟรอบอารีย์ สแกนดิเนเวียใจกลางกรุง </p>
             </div>
         </div>
-
-        <div class="row">
-            <img src="../assets/tab2/Group 985.png" id="picturecontent1">
-        </div>
         <div class="row">
             <div class="col" id="story">
                 <p>Lorem ipsum dolor sit amet, consectetur
                     adipiscing elit, sed do eiusmod tempor
-                    incididunt ua. <span>see more</span></p>
+                    incididunt ua. <span>>.........</span></p>
             </div>
         </div>
+        <div class="">
+            <img src="../assets/tab2/Group 985.png" id="picturecontent1">
+        </div>
+
 
         <diV class="row">
             <div class="col-1">
@@ -227,7 +233,7 @@
                 <p>ADddddy</p>
             </div>
             <div class="col" id="tab2pic5">
-                <img src="../assets/Component 2 – 1.png"  onclick="tab2pic5()" id="word">
+                <img src="../assets/Component 2 – 1.png"  onclick="tab2pic5()" id="word" data-toggle="modal" data-target=".bs-example-modal-lg">
             </div>
         </div>
         <div class="row">
@@ -235,17 +241,17 @@
                 <p>แชะรูปกับคาเฟรอบอารีย์ สแกนดิเนเวียใจกลางกรุง </p>
             </div>
         </div>
-
-        <div class="row">
-            <img src="../assets/tab2/Group 985.png" id="picturecontent1">
-        </div>
         <div class="row">
             <div class="col" id="story">
                 <p>Lorem ipsum dolor sit amet, consectetur
                     adipiscing elit, sed do eiusmod tempor
-                    incididunt ua. <span>see more</span></p>
+                    incididunt ua. <span>>.........</span></p>
             </div>
         </div>
+        <div class="">
+            <img src="../assets/tab2/Group 985.png" id="picturecontent1">
+        </div>
+
 
         <diV class="row">
             <div class="col-1">
@@ -272,11 +278,78 @@
     </div>
 </div>
 
+
+
+<!--======================================== Modal ============================-->
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog">
+        <div class="modal-content" id="create-bord-defu">
+            <div class="modal-header">
+                <h5 class="modal-title" id="myModalLabel">Select Board</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+            </div>
+            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ex ligulao.</p> -->
+            <div class="row" style="width: 100%;">
+                <div class="col-3">
+                    <div>
+                        <img src="../assets/tab1/7b26ff73-a729-4b8d-accc-d0a0832b48da.png" id="selectpicture">
+                    </div>
+                </div>
+                <div class="col justify-content-center align-self-center" id="textselectbord">
+                    <p>ภูเขาธรรมชาติ</p>
+                </div>
+            </div>
+            <div class="row" style="width: 100%;">
+                <div class="col-3 ">
+                    <div>
+                        <img src="../assets/tab1/odrbk3p2h1TaDLVcIcf-o.png" id="selectpicture">
+                    </div>
+                </div>
+                <div class="col justify-content-center align-self-center">
+                    <p>Bangkok Trip</p>
+                </div>
+            </div>
+            <div class="row" style="width: 100%;">
+                <div class="col-3">
+                    <div>
+                        <img src="../assets/tab1/po36dh3acd0K29bdbH3q-o.png" id="selectpicture">
+                    </div>
+                </div>
+                <div class="col justify-content-center align-self-center">
+                    <p>ทะเล</p>
+                </div>
+            </div>
+            <div class="row" style="width: 100%;">
+                <div class="col-3">
+                    <div>
+                        <img src="../assets/tab1/asset-1.png" id="selectpicture">
+                    </div>
+                </div>
+                <div class="col justify-content-center align-self-center">
+                    <p>เดินเขา</p>
+                </div>
+            </div>
+            <div class="row" style="width: 100%;" onclick="createBord()">
+                <div class="col-3">
+                    <div>
+                        <img src="../assets/tab1/Component 3 – 1.png" id="selectpicture">
+                    </div>
+                </div>
+                <div class="col justify-content-center align-self-center">
+                    <p>Create Board</p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
 <!-- <script src="../js/tab2.js"></script> -->
 
 <script>
     function tab2pic1(){
-        $(".modal-content").load("./tab/tab1.html #create-bord-defu");
+        $(".modal-content").load("./tab/tab2.html #create-bord-defu");
         $('#tab2pic1_right').load("./tab2pin/before1.html");
         $('#tab2pic1').load("emty.html");
     }
@@ -303,5 +376,20 @@
         $(".modal-content").load("./tab/tab1.html #create-bord-defu");
         $('#tab2pic5_right').load("./tab2pin/before5.html");
         $('#tab2pic5').load("emty.html");
+    }
+
+    function feedpost1(){
+        console.log("XXX");
+        $("#contentapp").load("./feed/post1.html");
+        $(".fixed-bottom").load('emty.html');
+        $("#contentstory").load('emty.html');
+        $(".navbar").load('emty.html')
+    }
+    function feedpost2(){
+        console.log("XXX");
+        $("#contentapp").load("./feed/postmany.html");
+        $(".fixed-bottom").load('emty.html');
+        $("#contentstory").load('emty.html');
+        $(".navbar").load('emty.html')
     }
 </script>
