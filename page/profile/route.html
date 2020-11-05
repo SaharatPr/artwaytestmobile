@@ -1,10 +1,18 @@
 <link rel="stylesheet" href="../css/rout.css">
 <div id="headerprofile">
     <div class="row icon-right">
-        <img src="../assets/profile/Icon ionic-ios-settings2.png" onclick="openNavRout()">
+        <img src="../assets/profile/Icon ionic-ios-settings.png" onclick="openNavRout()">
     </div>
     <div class="container" id="profile">
-        <img src="../assets/profile/Component 36 – 1.png" id="pictureprofile">
+        <img src="../assets/profile/New folder/Component 4.png" id="pictureprofile">
+        <div class="row" id="countfollow">
+            <div class="col">
+                <p onclick="follower()">14k Following</p>
+            </div>
+            <div class="col">
+                <p onclick="following()">14k Follower</p>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -12,23 +20,24 @@
 
 
     <div class="container">
-        <div class="row" id="countfollow">
+        <!-- <div class="row" id="countfollow">
             <div class="col">
                 <img src="../assets/profile/Component 40 – 1.png" id="profilefollower" onclick="follower()">
             </div>
             <div class="col">
                 <img src="../assets/profile/Component 42 – 1.png" id="profilefollowing"  onclick="following()">
             </div>
-        </div>
-        <div class="row">
+        </div> -->
+        <div class="row" id="tabtitle">
             <div class="container" id="buttontitletab7">
                 <button type="button" class="btn" id="tab7triprout" onclick="trip()">Trip</button>
-                <button type="button" class="btn" id="tab7articlerout">Article</button>
-                <button type="button" class="btn" id="tab7draf" onclick="route()">Draft</button>
-                <button type="button" class="btn" id="tab7likedrout" onclick="likerout()">Liked</button>
+                <!-- <button type="button" class="btn" id="tab7articlerout">Article</button> -->
+                <button type="button" class="btn" id="tab7draf" onclick="route()">Route</button>
+                <button type="button" class="btn" id="tab7likedrout" onclick="likerout()">Save</button>
+                <!-- <button type="button" class="btn" id="tab7likedrout" onclick="likerout()">Liked</button> -->
             </div>
         </div>
-    <div class="subcontentrout">
+    <!-- <div class="subcontentrout">
         <div class="row">
             <img src="../assets/profile/Component 38 – 1.png" alt="" id="draftprofile" onclick="postdraf()">
         </div>
@@ -36,7 +45,13 @@
         <div class="row">
             <img src="../assets/profile/Component 41 – 1.png" alt="" id="draftprofile" class="draftprofile">
         </div>
+    </div> -->
+    <div class="container" id="tab7side">
+        </div>
+        <br>
+        <img src="../assets/profile/Component 2 – 1.png" id="finalimages">
     </div>
+</div>
 </div>
 
     </div>

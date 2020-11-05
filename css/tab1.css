@@ -135,6 +135,7 @@ div#xxxxh{
 }
 
 #contentsuggested{
+    padding-top: 3em;
     background-color: #052238;
 }
 #titlesugess{
@@ -222,6 +223,7 @@ div#xxxxh{
     padding-top: 1.5em;
     color: #052238;
     background-color: #ffffff;
+    width: 100%;
 
 }
 #imgthisweek{
@@ -330,6 +332,18 @@ div#xxxxh{
     text-align: center;
     margin-top: 3.5em;
     margin-bottom: 17em;
+    top: auto;
+    left: 0;
+    right: 0;
+    justify-self: end;
+    border-radius: 15px;
+}
+#inputbordname1{
+    font-size: 1em;
+    width: 90%;
+    text-align: center;
+    margin-top: 3.5em;
+
     top: auto;
     left: 0;
     right: 0;

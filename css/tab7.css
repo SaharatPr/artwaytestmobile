@@ -11,13 +11,16 @@
 
 #profile{
     justify-content: center;
-    padding-bottom: 1em;
+    /* padding-bottom: 1em; */
     width: 100%;
 }
 
+div#countfollow {
+  padding-top: 1em;
+}
 button#tab7trip {
     background-color: #052238;
-    color: #FFFFFF;
+     color: #FFFFFF; 
     border-radius: 18px;
     width: 6em;
 }
@@ -88,7 +91,7 @@ div#body {
   }
 
   p{
-      color: black;
+      /* color: black; */
   }
   img#finalimages {
     padding-bottom: 6em;
@@ -185,4 +188,8 @@ img#picturecontent1 {
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 1em;
+}
+
+p{
+  color:#FFFFFF ;
 }

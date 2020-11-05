@@ -17,10 +17,10 @@
        <img src="../assets/thisweek/1.png" onclick="contentPost()">
     </li>
     <li class="list-group-item">
-        <img src="../assets/thisweek/2.png">
+        <img src="../assets/thisweek/2.png" onclick="contentPost()">
     </li>
     <li class="list-group-item">
-        <img src="../assets/thisweek/3.png">
+        <img src="../assets/thisweek/3.png" onclick="contentPost()">
     </li>
     <li class="list-group-item">
         <img src="../assets/thisweek/4.png">
@@ -46,8 +46,14 @@
   </ul>
 
   <script>
+      var gotopost1day = false;
       function contentPost(){
-         $("#contentapp").load('post.html');
+          this.gotopost1day = true;
+        //  $("#contentapp").load('post.html');
+        $("#contentapp").load("./feed/post1.html");
+        $(".fixed-bottom").load('emty.html');
+        $("#contentstory").load('emty.html');
+        $(".navbar").load('emty.html')
       }
 
       function switchTab1Page(){

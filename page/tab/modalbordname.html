@@ -1,3 +1,34 @@
 <div class="modal-header " id="modal-create-bord" >
-    <input type="text" placeholder="Board Name" id="inputbordname">
+    <div class="container">
+        <input type="text" placeholder="Board Name" id="inputbordname1">
+            <div class="container">
+        <img src="../assets/208224.png" style="    margin-top: 3em;
+
+        margin-bottom: 14em;
+        padding-bottom: 3;
+        width: 8em;" onclick="save()">
+    </div>
+    </div>
+    <!-- <div class="container">
+        <img src="../assets/208224.png">
+    </div> -->
+    
 </div>
+<script>
+       async function save(){
+        this.xxxx ="test";
+         $('#contentstory').load("./tab/tab7.html");
+       
+        $('.modal-backdrop').remove();
+        // modal-open
+        document.getElementById("iconfooter1").innerHTML = ` <img src="../assets/Default_explore.svg" id="iconpicture" onclick="switchTab2()">`
+      document.getElementById("iconfooter2").innerHTML = ` <img src="../assets/Icon_newfeed.svg" id="iconpicture" onclick="switchTab2()">`
+      document.getElementById("iconfooter7").innerHTML = ` <img src="../assets/Icon_3.svg" id="iconpicture" onclick="switchTab7()">` ;
+      document.getElementById("iconfooter6").innerHTML = ` <img src="../assets/Icon_noti.svg" id="iconpicture" onclick="switchTab6()">`;
+      $("#header").load("emty.html");
+      $("#body").load("emty.html");
+        // $('#contentstory').load("./tab/tab7.html");
+        $('#iconpicture7').click();
+        $('#tab7liked').click();
+    }
+</script>

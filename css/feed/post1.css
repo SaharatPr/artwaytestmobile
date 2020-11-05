@@ -91,3 +91,13 @@ div#tripday3 {
 html {
     scroll-behavior: smooth;
   }
+
+  /* div#map::before {
+    background-color: red !important;
+    content: open-quote;
+}
+  div#tripday1::after{
+    background-color: yellow !important;
+    content: open-quote;
+    padding-top: 10em;
+  } */

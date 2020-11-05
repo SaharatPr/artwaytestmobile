@@ -1,17 +1,83 @@
 <link rel="stylesheet" href="../css/like.css">
 <div id="headerprofile">
     <div class="row icon-right">
-        <img src="../assets/profile/Icon ionic-ios-settings2.png" onclick="openNavRout()">
+        <img src="../assets/profile/Icon ionic-ios-settings.png" onclick="openNavRout()">
     </div>
-    <div class="row" id="profile">
-        <img src="../assets/profile/Component 36 – 1.png" id="pictureprofile">
+    <div class="container" id="profile">
+        <img src="../assets/profile/New folder/Component 4.png" id="pictureprofile">
+        <div class="row" id="countfollow">
+            <div class="col">
+                <p onclick="follower()">14k Following</p>
+            </div>
+            <div class="col">
+                <p onclick="following()">14k Follower</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="body">
+
+    <div class="container">
+        <div class="row" >
+            <div class="container" id="buttontitletab7">
+                <button type="button" class="btn" id="tab7trip"onclick="trip()">Trip</button>
+                <!-- <button type="button" class="btn" id="tab7article">Article</button> -->
+                <button type="button" class="btn" id="tab7article" onclick="route()">Route</button>
+                <button type="button" class="btn" id="tab7liked" onclick="tab7like()">Save</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="tab5content">
+        <div class="row container">
+
+            <div class="col" id="trip10">
+                Trip(12)
+            </div>
+            <div class="col" id="tab7seeall">
+                See all
+            </div>
+        </div>
+    </div>
+    <div class="container" id="tab7side">
+
+        <!-- <div class="swiper-container" id="slidethisweek">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="container" id="content">
+                        <img src="../assets/profile/Component 34 – 1.png" id="picturecontent1">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-slide">
+                        <div class="container" id="content">
+                            <img src="../assets/profile/Component 34 – 1.png" id="picturecontent1">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="swiper-slide">
+                        <div class="container" id="content">
+                            <img src="../assets/profile/Component 34 – 1.png" id="picturecontent1">
+                        </div>
+                    </div>
+
+                </div>
+            </div> -->
+
+
+        </div>
+        <br>
+        <img src="../assets/profile/Component 1 – 1.png" id="finalimages">
     </div>
 </div>
 
-<div id="body">
+<!-- <div id="body"> -->
 
 
-    <div class="container">
+    <!-- <div class="container">
         <div class="row" id="countfollow">
             <div class="col">
                 <img src="../assets/profile/Component 40 – 1.png" id="profilefollower" onclick="follower()">
@@ -20,20 +86,20 @@
                 <img src="../assets/profile/Component 42 – 1.png" id="profilefollowing"  onclick="following()">
             </div>
         </div>
-    </div>
-        <div class="row">
+    </div> -->
+        <!-- <div class="row">
             <div class="container" id="buttontitletab7">
-                <button type="button" class="btn" id="tab7triprout" onclick="trip()">Trip</button>
-                <button type="button" class="btn" id="tab7articlerout">Article</button>
-                <button type="button" class="btn" id="tab7draf" onclick="route()">Draft</button>
-                <button type="button" class="btn" id="tab7likedrout" onclick="likerout()">Liked</button>
+                <button type="button" class="btn" id="tab7triprout" onclick="trip()">Trip</button> -->
+                <!-- <button type="button" class="btn" id="tab7articlerout">Article</button> -->
+                <!-- <button type="button" class="btn" id="tab7draf" onclick="route()">Route</button>
+                <button type="button" class="btn" id="tab7likedrout" onclick="likerout()">Save</button>
             </div>
         </div>
 
 </div>
 
-<div>
-    <div class="row">
+<div> -->
+    <!-- <div class="row">
         <img src="../assets/profile/Component 3 – 1.png" alt="" id="draftprofile">
     </div>
     <div class="row">
@@ -44,11 +110,15 @@
     </div>
     <div class="row">
         <img src="../assets/profile/Component 6 – 1.png" alt="" id="draftprofile" style="padding-bottom: 5em;">
-    </div>
+    </div> -->
 
 
 </div>
 <script>
+            function trip(){
+            console.log("Wellcome to trip");
+            $('#contentstory').load("./tab/tab7.html");
+        }
             function follower(){
             $("#body").load("emty.html");
             $("#headerprofile").load("emty.html");

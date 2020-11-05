@@ -36,7 +36,10 @@
 
 footer{
     background-color: #052238;
-
+    bottom: 0;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll;
+    height: auto;
 }
 
 

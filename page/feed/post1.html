@@ -59,11 +59,37 @@ width: 100%;
 </div>
 
   <script>
+      
       function contentPost(){
          $("#contentapp").load('post.html');
       }
 
       function switchTab2Page(){
+          if(this.gotopost1day == true){
+            $("#contentapp").load("thisweek.html");
+        $(".fixed-bottom").load('emty.html');
+        $("#contentstory").load('emty.html');
+        $(".navbar").load('emty.html');
+        this.gotopost1day = false;
+        return;
+          }
+          if(this.gotopost1day == "tab1"){
+            $("#contentapp").load("emty.html");
+            $("#header").load("./nav/header.html");
+             $("#footer").load("./nav/footer.html");
+             $('#contentstory').load("./tab/tab1.html");
+             this.gotopost1day = false;
+             return;
+          }
+          if(this.gotopost1day == "sugess"){
+            $("#xxx").load('emty.html');
+        $("#contentapp").load("foryou.html");
+        $(".fixed-bottom").load('emty.html');
+        $("#contentstory").load('emty.html');
+        $(".navbar").load('emty.html');
+        this.gotopost1day = false;
+        return
+          }
         $("#header").load("./nav/header.html");
             $("#footer").load("./nav/footer.html");
             $('#contentstory').load("./tab/tab2.html");

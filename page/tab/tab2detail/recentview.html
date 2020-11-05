@@ -8,7 +8,7 @@
         </div>
         <div class="col" id="thisweekp" >
           <!-- <p class=" text-center text-right"> -->
-              SUGGESTED
+              Recent View
             <!-- </p>   -->
         </div>
     </div>
@@ -19,10 +19,10 @@
        <img src="../assets/thisweek/1.png" onclick="contentPost()">
     </li>
     <li class="list-group-item">
-        <img src="../assets/thisweek/2.png" onclick="contentPost()">
+        <img src="../assets/thisweek/2.png">
     </li>
     <li class="list-group-item">
-        <img src="../assets/thisweek/3.png" onclick="contentPost()">
+        <img src="../assets/thisweek/3.png">
     </li>
     <li class="list-group-item">
         <img src="../assets/thisweek/4.png">
@@ -48,16 +48,9 @@
   </ul>
 
   <script>
-       var gotopost1day = false;
       function contentPost(){
-          this.gotopost1day = "sugess";
-        //  $("#contentapp").load('post.html');
-        $("#contentapp").load("./feed/post1.html");
-        $(".fixed-bottom").load('emty.html');
-        $("#contentstory").load('emty.html');
-        $(".navbar").load('emty.html')
+         $("#contentapp").load('post.html');
       }
- 
 
       function switchTab1Page(){
         $("#header").load("./nav/header.html");

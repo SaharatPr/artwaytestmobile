@@ -37,6 +37,33 @@
   <img src="../assets/feed/4.png" id="iconmiddle" onclick="switchTab4()">
 </div>
 <script>
+  
+  var device = (getMobileOperatingSystem());
+
+if(device == "iOS"){
+    document.getElementById("footerfixed").style.paddingBottom="2em";
+}
+
+function getMobileOperatingSystem() {
+  console.log("DWJUFHWOIUFHNWI");
+  var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+      // Windows Phone must come first because its UA also contains "Android"
+    if (/windows phone/i.test(userAgent)) {
+        return "Windows Phone";
+    }
+
+    if (/android/i.test(userAgent)) {
+        return "Android";
+    }
+
+    // iOS detection from: http://stackoverflow.com/a/9039885/177710
+    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        return "iOS";
+    }
+
+    return "unknown";
+}
   function  switchTab1(){
     console.log("tab 1");
     document.getElementById("iconfooter1").innerHTML = ` <img src="../assets/Icon_explore.svg" id="iconpicture" onclick="switchTab1()">` ;
@@ -54,7 +81,7 @@
 
         $('#contentstory').load("./tab/tab2.html");
         document.getElementById("iconfooter1").innerHTML = ` <img src="../assets/Default_explore.svg" id="iconpicture" onclick="switchTab1()">` ;
-        document.getElementById("iconfooter2").innerHTML = ` <img src="../assets/icon_1.svg" id="iconpicture" onclick="switchTab2()">` ;
+        document.getElementById("iconfooter2").innerHTML = ` <img src="../assets/Icon_1.svg" id="iconpicture" onclick="switchTab2()">` ;
         document.getElementById("iconfooter6").innerHTML = ` <img src="../assets/Icon_noti.svg" id="iconpicture" onclick="switchTab6()">`;
      document.getElementById("iconfooter7").innerHTML = ` <img src="../assets/Icon_myprofile.svg" id="iconpicture" onclick="switchTab7()">`;
      $("#header").load("./nav/header.html");
@@ -82,6 +109,7 @@
         $('#contentstory').load("./tab/tab6.html");
     }
     function switchTab7(){
+      console.log("tab7");
       document.getElementById("iconfooter1").innerHTML = ` <img src="../assets/Default_explore.svg" id="iconpicture" onclick="switchTab2()">`
       document.getElementById("iconfooter2").innerHTML = ` <img src="../assets/Icon_newfeed.svg" id="iconpicture" onclick="switchTab2()">`
       document.getElementById("iconfooter7").innerHTML = ` <img src="../assets/Icon_3.svg" id="iconpicture" onclick="switchTab7()">` ;

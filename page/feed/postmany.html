@@ -22,17 +22,17 @@
                 </div>
                 <a   href="#tripday1" >  
                     <div class="" id="day1" >
-                    <img src="../assets/tab2feed/Component 18 – 1.png"   id="daynumber2" href="#tripday1">
+                    <img src="../assets/tab2feed/Component 18 – 1.png"   id="daynumber2" href="#tripday1" onclick="scroller1()">
                     </div>
                 </a>
                 <a href="#tripday2" onclick="xxx()" >  
                 <div class="" id="day2" href="#tripday2">
-                    <img src="../assets/tab2feed/Component 20 – 1.png"  id="daynumber3" href="#tripday2">
+                    <img src="../assets/tab2feed/Component 20 – 1.png"  id="daynumber3" href="#tripday2" onclick="scroller2()">
                 </div>
                 </a>
                 <a href="#tripday3"  >  
                 <div class="" id="day3">
-                    <img src="../assets/tab2feed/Component 21 – 1.png"   id="daynumber4" href="#tripday3">
+                    <img src="../assets/tab2feed/Component 21 – 1.png"   id="daynumber4" href="#tripday3" onclick="scroller3()">
                 </div>
                 </a>
             </div>
@@ -77,7 +77,7 @@
    <div id="tripday1">
     <div id="scrollo1">
 
-    </di>
+    </div>
     <img src="../assets/tab2feed/Component 23 – 1.png" style="
     width: 100%;
 ">
@@ -105,6 +105,28 @@ width: 100%;
 </div>
 
   <script>
+
+      function scroller1(){
+          console.log($("#thisweekheader").height());
+        $('html, body').animate({
+            scrollTop: $('#tripday1').offset().top -$("#thisweekheader").height() - 16
+        }, 500);
+      }
+
+      function scroller2(){
+        //   console.log();
+        $('html, body').animate({
+            scrollTop: $('#tripday2').offset().top - $("#thisweekheader").height() - 16
+        }, 500);
+      }
+
+      function scroller3(){
+        //   console.log();
+        $('html, body').animate({
+            scrollTop: $('#tripday3').offset().top -$("#thisweekheader").height() -16
+        }, 500);
+      }
+
       function contentPost(){
          $("#contentapp").load('post.html');
       }

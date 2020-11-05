@@ -24,7 +24,7 @@ body{
 
 #picturecontent1{
     margin: auto;
-    padding-bottom: 2em;
+    padding-bottom: 1em;
     width: 100%;
 }
 
@@ -299,5 +299,5 @@ input[type="text"] {
   #iconmiddle {
     width: 4em;
     height: 4em;
-    display: none;
+    /* display: none; */
 }

@@ -5,18 +5,26 @@
         <img src="../assets/profile/Icon ionic-ios-settings.png" onclick="openNav()">
     </div>
     <div class="container" id="profile">
-        <img src="../assets/profile/Component 31 – 1.png" id="pictureprofile">
+        <img src="../assets/profile/New folder/Component 4.png" id="pictureprofile">
+        <div class="row" id="countfollow">
+            <div class="col">
+                <p onclick="follower()">14k Following</p>
+            </div>
+            <div class="col">
+                <p onclick="following()">14k Follower</p>
+            </div>
+        </div>
     </div>
 </div>
 <div id="body">
 
     <div class="container">
-        <div class="row">
+        <div class="row" >
             <div class="container" id="buttontitletab7">
                 <button type="button" class="btn" id="tab7trip">Trip</button>
-                <button type="button" class="btn" id="tab7article">Article</button>
+                <!-- <button type="button" class="btn" id="tab7article">Article</button> -->
                 <button type="button" class="btn" id="tab7article" onclick="route()">Route</button>
-                <button type="button" class="btn" id="tab7liked" onclick="tab7like()">Liked</button>
+                <button type="button" class="btn" id="tab7liked" onclick="tab7like()">Save</button>
             </div>
         </div>
     </div>
@@ -25,7 +33,7 @@
         <div class="row container">
 
             <div class="col" id="trip10">
-                Trip(10)
+                Trip(12)
             </div>
             <div class="col" id="tab7seeall">
                 See all
@@ -34,7 +42,7 @@
     </div>
     <div class="container" id="tab7side">
 
-        <div class="swiper-container" id="slidethisweek">
+        <!-- <div class="swiper-container" id="slidethisweek">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="container" id="content">
@@ -58,12 +66,12 @@
                     </div>
 
                 </div>
-            </div>
+            </div> -->
 
 
         </div>
         <br>
-        <img src="../assets/profile/Component 35 – 1.png" id="finalimages">
+        <img src="../assets/profile/Component 1 – 1.png" id="finalimages">
     </div>
 </div>
     <div id="mySidenav" class="sidenav">
@@ -80,6 +88,11 @@
           </ul>
     </div>
     <script>   
+    console.log(this.xxxx);
+    if(this.xxxx == "test"){
+        tab7like();
+        this.xxxx="D"
+    }
     var valid = false;
     var swiper = new Swiper('#slidethisweek', {
             loop: true,
@@ -96,6 +109,8 @@
         }
 
         function tab7like(){
+            console.log("LIKE"
+            );
             $("#body").load("emty.html");
             $("#headerprofile").load("./profile/likes.html");
 
